@@ -1,3 +1,5 @@
+import { cloud1 } from './Constants';
+
 function Skills(p) {
     let moss;
     let lightMoss;
@@ -41,29 +43,7 @@ function Skills(p) {
         p.stroke(20);
         p.strokeWeight(1);
         p.noFill();
-        p.beginShape();
-        p.curveVertex(735, 535);
-        p.curveVertex(710, 515);
-        p.curveVertex(645, 480);
-        p.curveVertex(585, 485);	//second lowest
-        p.curveVertex(507, 470);
-        p.curveVertex(490, 390);
-        p.curveVertex(530, 315);
-        p.curveVertex(567, 240);
-        p.curveVertex(580, 140);
-        p.curveVertex(690, 100);	//top
-        // curveVertex(760,130);
-        p.curveVertex(780, 200);
-        p.curveVertex(820, 230);
-        p.curveVertex(900, 220);
-        p.curveVertex(935, 275);
-        p.curveVertex(958, 330);	//rightmost
-        p.curveVertex(925, 410);
-        p.curveVertex(900, 455);
-        p.curveVertex(865, 530);
-        p.curveVertex(830, 550);
-        p.curveVertex(735, 535);
-        p.endShape(p.CLOSE);
+        p.curveShape(cloud1);
         
         const others = [
             {skill: "Java", value: 5},
@@ -95,6 +75,13 @@ function Skills(p) {
         p.text(obj.skill, x, y);
     };
 
+    p.curveShape = (array) => {
+        p.beginShape();
+        for (let i = 0; i < array.length; i++) {
+            p.curveVertex(array[i].x, array[i].y);
+        }
+        p.endShape(p.CLOSE);
+    }
 };
 
 export default Skills;
