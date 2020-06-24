@@ -13,33 +13,88 @@ function Skills(p) {
     }
 
     p.draw = function() {
-        const moss = p.color(141,244,244);
         p.noStroke();
         p.fill(240);
         p.rect(485, 40, 475, 530);
+	
+        const frontend = [
+            {skill: "Javascript", value: 4},	//0
+            {skill: "React", value: 5},				//1
+            {skill: "Typescript", value: 3},	//2
+            {skill: "HTML", value: 4},				//3
+            {skill: "CSS", value: 4},					//4
+            {skill: "Node.js",value: 2},			//5
+        ];
+	
+        //front end circles
+        p.fill(moss);
+        p.drawCircle(730, 320, frontend[1]);	//React
+        p.drawCircle(875, 300, frontend[3]);	//HTML
+        p.drawCircle(640, 190, frontend[4]);	//CSS
+        p.drawCircle(740, 210, frontend[5]);	//Node
+        p.drawCircle(580, 420, frontend[0]);	//Javascript
+        p.drawCircle(830, 430, frontend[2]);	//Typescript
+        
+        //cloud
+        // stroke(lightMoss);
+        // strokeWeight(4);
+        p.stroke(20);
+        p.strokeWeight(1);
+        p.noFill();
+        p.beginShape();
+        p.curveVertex(735, 535);
+        p.curveVertex(710, 515);
+        p.curveVertex(645, 480);
+        p.curveVertex(585, 485);	//second lowest
+        p.curveVertex(507, 470);
+        p.curveVertex(490, 390);
+        p.curveVertex(530, 315);
+        p.curveVertex(567, 240);
+        p.curveVertex(580, 140);
+        p.curveVertex(690, 100);	//top
+        // curveVertex(760,130);
+        p.curveVertex(780, 200);
+        p.curveVertex(820, 230);
+        p.curveVertex(900, 220);
+        p.curveVertex(935, 275);
+        p.curveVertex(958, 330);	//rightmost
+        p.curveVertex(925, 410);
+        p.curveVertex(900, 455);
+        p.curveVertex(865, 530);
+        p.curveVertex(830, 550);
+        p.curveVertex(735, 535);
+        p.endShape(p.CLOSE);
+        
+        const others = [
+            {skill: "Java", value: 5},
+            {skill: "C", value: 3},
+            {skill: "git", value: 4},
+            {skill: "OpenSSL", value: 3}
+        ];
     };
 
-    // drawCircle(x, y, obj) {
-    //     const unit = 25;
-    //     p.fill(moss);
-    //     p.ellipse(x, y, obj.value * unit);
-    //     // fill(0);
-    //     // fill(37, 40, 61);
-    //     p.fill(54, 58, 59);		//dark blue
-    //     p.textFont('Proxima Nova');
-    //     // textFont('Montserrat');
-    //     p.textAlign(CENTER, CENTER);
-    //     if (obj.value == 5) {
-    //         p.textSize(24);
-    //     } else if (obj.value == 4) {
-    //         p.textSize(18);
-    //     } else if (obj.value == 3) {
-    //         p.textSize(14);
-    //     } else {
-    //         p.textSize(12);
-    //     }
-    //     p.text(obj.skill, x, y);
-    // };
+    p.drawCircle = (x, y, obj) => {
+        const unit = 25;
+        p.fill(moss);
+        p.ellipse(x, y, obj.value * unit);
+        // fill(0);
+        // fill(37, 40, 61);
+        p.fill(54, 58, 59);		//dark blue
+        p.textFont('Proxima Nova');
+        // textFont('Montserrat');
+        p.textAlign(p.CENTER, p.CENTER);
+        if (obj.value == 5) {
+            p.textSize(24);
+        } else if (obj.value == 4) {
+            p.textSize(18);
+        } else if (obj.value == 3) {
+            p.textSize(14);
+        } else {
+            p.textSize(12);
+        }
+        p.text(obj.skill, x, y);
+    };
+
 };
 
 export default Skills;
