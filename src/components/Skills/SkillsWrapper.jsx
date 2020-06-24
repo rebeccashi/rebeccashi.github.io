@@ -1,11 +1,11 @@
 import React from 'react';
 import p5 from 'p5';
 import Skills from './Skills';
+import { withRouter } from 'react-router-dom';
 
 class SkillsWrapper extends React.Component {
     componentDidMount() {
         this.canvas = new p5(Skills, "skillsSketch");
-        //this.canvas = new window.p5(sketch, "app-p5_container");
         //the name in quotation marks corresponds to the div id
     }
 
@@ -24,4 +24,4 @@ class SkillsWrapper extends React.Component {
     }
 }
 
-export default SkillsWrapper;
+export default withRouter(SkillsWrapper);
