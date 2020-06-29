@@ -16,8 +16,8 @@ function Skills(p) {
 
     p.draw = function() {
         p.noStroke();
-        p.fill(240);
-        p.rect(485, 40, 475, 530);
+        // p.fill(240);
+        // p.rect(485, 40, 475, 530);
 	
         const frontend = [
             {skill: "Javascript", value: 4},	//0
@@ -53,6 +53,12 @@ function Skills(p) {
         ];
     };
 
+    /*cloud = curveShape + drawCircles 
+        do i include the coordinates of circles in the array?
+        The coordinates would change based on window size and also mobile view
+        responsiveness: grid (columns), percentage
+    */
+
     p.drawCircle = (x, y, obj) => {
         const unit = 25;
         p.fill(moss);
@@ -60,14 +66,16 @@ function Skills(p) {
         // fill(0);
         // fill(37, 40, 61);
         p.fill(54, 58, 59);		//dark blue
-        p.textFont('Proxima Nova');
-        // textFont('Montserrat');
+        p.textFont('Montserrat');
+        // p.textFont('Proxima Nova');
+        // p.textFont('Noto Sans JP');
+        // p.textFont('Lora');
         p.textAlign(p.CENTER, p.CENTER);
-        if (obj.value == 5) {
+        if (obj.value === 5) {
             p.textSize(24);
-        } else if (obj.value == 4) {
+        } else if (obj.value === 4) {
             p.textSize(18);
-        } else if (obj.value == 3) {
+        } else if (obj.value === 3) {
             p.textSize(14);
         } else {
             p.textSize(12);
