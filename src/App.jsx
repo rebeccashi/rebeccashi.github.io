@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Element, Events} from 'react-scroll'
 import Home from './components/Home/Home';
 import Navbar from './components/Nabar/Navbar';
 import SkillsWrapper from './components/Skills/SkillsWrapper';
@@ -8,29 +8,48 @@ import Experience from './components/Experience/Experience';
 import Coursework from './components/Coursework/Coursework';
 import { Container, Row, Col } from 'react-bootstrap';
 
-const App = () => {
+class App extends React.Component {
 
-  return (
-    <Container fluid>
-      <BrowserRouter>
-        <Row>
-          <Col lg={2}>
-            <Navbar />
-          </Col>
-          <Col lg={10}>
-          <Switch>
-              <Route exact path='/' component={Home} key='home'/>
-              <Route path='/Experience' component={Experience} key='experience'/>
-              <Route path='/Skills' component={SkillsWrapper} key='skills'/>
-              <Route path='/Coursework' component={Coursework} key='coursework'/>
-          </Switch>
-          </Col>
-        </Row>
-        </BrowserRouter>
-      </Container>
-    )
+  componentDidMount() {
+    Events.scrollEvent.register('begin', function () {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register('end', function () {
+      console.log("end", arguments);
+    });
+  }
+
+  componentWillUnmount() {
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
+  }
+
+  render(){
+    return (
+      <Container fluid>
+          <Row>
+            <Col lg={2}>
+              <Navbar />
+            </Col>
+            <Col lg={10}>
+            <Element name="home" className="element">
+              <Home />
+            </Element>
+            <Element name="experience" className="element">
+              <Experience />
+            </Element>
+            <Element name="skills" className="element">
+              <SkillsWrapper />
+            </Element>
+            <Element name="coursework" className="element">
+              <Coursework />
+            </Element>
+            </Col>
+          </Row>
+        </Container>
+      )
+  }  
 };
-
-
 
 export default App;

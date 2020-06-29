@@ -24,4 +24,4 @@ class SkillsWrapper extends React.Component {
     }
 }
 
-export default withRouter(SkillsWrapper);
+export default SkillsWrapper;
