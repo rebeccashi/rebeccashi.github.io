@@ -6,31 +6,30 @@ import Navbar from './components/Nabar/Navbar';
 import SkillsWrapper from './components/Skills/SkillsWrapper';
 import Experience from './components/Experience/Experience';
 import Coursework from './components/Coursework/Coursework';
-import {Row, Col} from 'antd';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const App = () => {
+
   return (
-    <div>
-     <Row>
+    <Container fluid>
       <BrowserRouter>
-        <Col span={6}>
-          <Navbar />
-        </Col>
-        <Col span={18}>
+        <Row>
+          <Col lg={2}>
+            <Navbar />
+          </Col>
+          <Col lg={10}>
           <Switch>
               <Route exact path='/' component={Home} key='home'/>
               <Route path='/Experience' component={Experience} key='experience'/>
               <Route path='/Skills' component={SkillsWrapper} key='skills'/>
               <Route path='/Coursework' component={Coursework} key='coursework'/>
           </Switch>
-        </Col>
+          </Col>
+        </Row>
         </BrowserRouter>
-      </Row>
-      </div>
-
-
+      </Container>
     )
-  ;}
+};
 
 
 
