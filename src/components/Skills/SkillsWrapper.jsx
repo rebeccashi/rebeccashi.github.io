@@ -1,7 +1,6 @@
 import React from 'react';
 import p5 from 'p5';
 import Skills from './Skills';
-import { withRouter } from 'react-router-dom';
 
 class SkillsWrapper extends React.Component {
     componentDidMount() {
