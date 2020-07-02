@@ -1,6 +1,6 @@
 import React from 'react';
 import p5 from 'p5';
-import {Row} from 'react-bootstrap';
+import { Row, Col} from 'react-bootstrap';
 import HomeBackground from './HomeBackground';
 import './HomeWrapper.css';
 
@@ -23,12 +23,20 @@ class HomeWrapper extends React.Component {
 
         return(
             <div id="backgroundSketch" className="sketch">
-                <Row className='home'>
-                    <p>Hi there! I am Xiaoyi Shi and I go by Rebecca. 
-                    I am a rising junior at New York University studying Computer Science. 
-                    I am currently working for a nonprofit organization as a front-end web developer. 
-                    My career goal is to become a software engineer. In addition to computer science, 
-                    I am also interested in art and design, including UI/UX. </p>
+                <Row>
+                    <Col md={1}></Col>
+                    <Col md={10} className='bio'>
+                        <h2>Hi there!</h2>
+                        <p>
+                            I am Xiaoyi Shi and I go by Rebecca. 
+                            I am a rising junior at New York University studying Computer Science. 
+                            I am currently working for a nonprofit organization as a front-end web developer. 
+                            My career goal is to become a <strong>software engineer</strong>. 
+                            In addition to computer science, 
+                            I am also interested in art and design, including UI/UX. 
+                        </p>
+                    </Col>
+                    <Col md={1}></Col>
                 </Row>
             </div>
         );

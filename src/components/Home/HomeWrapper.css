@@ -3,7 +3,19 @@
     position: absolute;
 } 
 
-.home {
+.bio {
+    padding-top: 80px;
+}
+
+h2 {
+    font-family: 'MuseoModerno', cursive;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'PT Sans';
+    padding-top: 10px;
 }
 
 
