@@ -6,9 +6,9 @@ import './NavbarStyles.css';
 function Navbar() {
     //Make an array for all the sections and save it in a separate file
     return (
-            <div>
+            <div className='navbar'>
                 <h1 id='logo'>RS</h1>
-                <div>
+                <div className='links'>
                     <Row><Link activeClass="active" to='home' className='link' spy={true} smooth={true} duration={500}>Home</Link></Row>
                     <Row><Link activeClass="active" to='experience' className='link' spy={true} smooth={true} duration={500}>Experience</Link></Row>
                     <Row><Link activeClass="active" to='skills' className='link' spy={true} smooth={true} duration={500}>Skills</Link></Row>
