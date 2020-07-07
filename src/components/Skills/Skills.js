@@ -60,6 +60,8 @@ function Skills(p) {
     */
 
     p.drawCircle = (x, y, obj) => {
+
+        //make the cirlces go left and right 
         const unit = 25;
         p.fill(moss);
         p.ellipse(x, y, obj.value * unit);
