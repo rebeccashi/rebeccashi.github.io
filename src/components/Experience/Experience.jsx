@@ -1,6 +1,8 @@
 import * as React from 'react';
+import Box from './Box';
+import {nyu, calendar} from './Constants';
 
-class Experience extends React.Component(){
+class Experience extends React.Component{
 
     constructor(props) {
         super(props);
@@ -13,7 +15,8 @@ class Experience extends React.Component(){
     render() {
         return (
             <div className="experience">
-                Experience
+                <h1>Experience</h1>
+                <Box object={nyu}/>
             </div>
         )
     }

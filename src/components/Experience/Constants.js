@@ -1,6 +1,6 @@
 const jobTypes = {
-    Work = 'Work',
-    Project = 'Project',   
+    Work: 'Work',
+    Project: 'Project',   
 };
 
 const nyu = {
