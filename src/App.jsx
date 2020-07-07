@@ -26,6 +26,7 @@ class App extends React.Component {
   }
 
   render(){
+ //Fix the navbar getting squashed to the left when the screen is xs
     return (
       <Container fluid>
           <Row>
