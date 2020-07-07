@@ -1,10 +1,22 @@
+
+
 .sketch{
     height: 100vh;
     position: absolute;
+    width: 100%;
 } 
 
 .bio {
-    padding-top: 80px;
+    margin-top: 12%;
+    padding: 5%;
+    /* background-color: #d3cfff; */
+    /* background-color: #dcd9ff; */
+    /* background-color: rgba(177, 170, 255, 0.5); */
+    /* EED5C2 */
+}
+
+.nyu {
+    color: '#7A28CB' !important;
 }
 
 h2 {
@@ -13,7 +25,6 @@ h2 {
 
 p {
     font-size: 24px;
-    font-weight: 300;
     font-family: 'PT Sans';
     padding-top: 10px;
 }

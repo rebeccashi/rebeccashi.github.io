@@ -20,7 +20,8 @@ class HomeWrapper extends React.Component {
 
     render() {
         //REWRITE BIO!!!!1
-
+        //Typing "Hi there!"
+        //color highlighting effect --> needs research
         return(
             <div id="backgroundSketch" className="sketch">
                 <Row>
@@ -29,9 +30,9 @@ class HomeWrapper extends React.Component {
                         <h2>Hi there!</h2>
                         <p>
                             I am Xiaoyi Shi and I go by Rebecca. 
-                            I am a rising junior at New York University studying Computer Science. 
+                            I am a rising junior at <span className='nyu'>New York University</span> <span>studying Computer Science</span>. 
                             I am currently working for a nonprofit organization as a front-end web developer. 
-                            My career goal is to become a <strong>software engineer</strong>. 
+                            My career goal is to become a full stack <span>software engineer</span>. 
                             In addition to computer science, 
                             I am also interested in art and design, including UI/UX. 
                         </p>
