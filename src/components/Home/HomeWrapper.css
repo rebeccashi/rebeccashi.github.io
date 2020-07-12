@@ -7,16 +7,8 @@
 } 
 
 .bio {
-    margin-top: 12%;
+    margin-top: 5%;
     padding: 5%;
-    /* background-color: #d3cfff; */
-    /* background-color: #dcd9ff; */
-    /* background-color: rgba(177, 170, 255, 0.5); */
-    /* EED5C2 */
-}
-
-.nyu {
-    color: '#7A28CB' !important;
 }
 
 h2 {
@@ -26,7 +18,32 @@ h2 {
 p {
     font-size: 24px;
     font-family: 'PT Sans';
-    padding-top: 10px;
+    padding-top: 8px;
+    padding-bottom: 6px;
 }
 
+.first {
+    text-align: left;
+}
 
+.second{
+    text-align: right;
+}
+
+#nyu {
+    color: #6E44FF;
+    font-weight: 600;
+}
+
+#cs {
+    /* text-decoration: underline; SOME ANIMATION INSTEAD*/
+    font-style: italic;
+}
+
+#skills {
+    color: #6E44FF;    
+}
+
+#art {
+    color: #6E44FF;    
+}
