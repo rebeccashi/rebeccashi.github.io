@@ -47,3 +47,28 @@ img {
     font-family: 'Roboto Mono', monospace;
     margin: auto;
 }
+
+#highlight1 {
+    display: inline;
+    animation-name: 'animation1';
+    animation-duration: '1s';
+}
+
+.home {
+    display: inline;
+    animation-name: 'animation1';
+    animation-duration: '1s';
+}
+
+.experience {
+
+}
+
+.skills {
+    
+}
+
+@keyframes animation1 {
+    from {background: #fff}
+    to {background: rgba(110, 68, 255, 0.7);}
+}
