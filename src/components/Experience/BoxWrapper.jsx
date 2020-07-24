@@ -2,7 +2,6 @@ import React from 'react';
 import './Box.css';
 import p5 from 'p5';
 import Box from './Box';
-import './BoxWrapper.css';
 
 class BoxWrapper extends React.Component {
     
@@ -17,14 +16,13 @@ class BoxWrapper extends React.Component {
 
     render() {
         const {type, summary, details, index} = this.props.object;        
-        let parentWidth, parentHeight, width, height, marginLeft;
+        let parentWidth, parentHeight, width, height, marginLeft, marginTop, top;
         if (this.props.width > 0) {
             parentWidth = this.props.width;
-            console.log('Box props' + parentWidth);
             if (parentWidth > 800) {    //3 boxes
                 width = parentWidth/3;
                 if (index % 3 === 1) {
-                    marginLeft = width - 150; 
+                    marginLeft = width; 
                 } else if (index % 3 === 2) {
                     marginLeft = 0;
                 }
@@ -37,13 +35,22 @@ class BoxWrapper extends React.Component {
         }
         if (this.props.height > 0) {
             parentHeight = this.props.height;
-            console.log('Box props' + parentHeight);
+            if (parentWidth > 800) {    //3 boxes
+                if (index % 3 === 1) {
+                } else if (index % 3 === 2) {
+                    // marginTop = parentHeight / 3;
+                    top = 100;
+                }
+            } else if (parentWidth > 500) { //2 boxes
+            } else {
+            }
+            
         }
 
         //fix summary style
 
         return(
-            <div id="boxSketch" style={{width: width, marginLeft: marginLeft}}>
+            <div id="boxSketch" style={{width: width, marginLeft: marginLeft, marginTop: marginTop, top: top}}>
                 <div id='type'>{type}</div>
                      <h3 className='summary'>
                          <span id="name">{summary.name}</span>
