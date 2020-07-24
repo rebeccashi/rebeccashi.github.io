@@ -1,9 +1,10 @@
 const jobTypes = {
-    Work: 'Work',
+    Work: 'Work Experience',
     Project: 'Project',   
 };
 
 const nyu = {
+    index: 1,
     type: jobTypes.Work,
     summary: {
         name: 'Software Developer',
@@ -18,6 +19,7 @@ const nyu = {
 };
 
 const calendar = {
+    index: 2,
     type: jobTypes.Project,
     summary: {
         name: 'Calendar',
