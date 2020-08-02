@@ -3,6 +3,7 @@ import './BoxWrapper.css';
 import p5 from 'p5';
 import Box from './Box';
 import $ from 'jquery';
+import calendar from '../../images/calendar-snapshot.png';
 
 class BoxWrapper extends React.Component {
     
@@ -16,13 +17,12 @@ class BoxWrapper extends React.Component {
     }
 
     render() {
-        const { type, summary, details, index } = this.props.object;  
+        const { index, type, summary, date, details, img } = this.props.object;  
         const { parentWidth } = this.props;
-        // console.log('window height ', $(window).height());
         const height = $(window).height();
-        //for position absolute, width is accurate but height is 0.
+        img && console.log(img.path);
          
-        let width, marginLeft, marginTop, top;
+        let width, marginLeft, marginTop;
         if (parentWidth > 0) {
             if (parentWidth > 800) {    //3 boxes
                 width = parentWidth/3 - 10;
@@ -52,19 +52,26 @@ class BoxWrapper extends React.Component {
         }
             
         // console.log('marginTop ', marginTop)
-        // console.log('top ', top)
 
         return(
             <div id="boxSketch" width={width} style={{width: width, marginLeft: marginLeft, marginTop: marginTop, marginRight: 10}}>
                 <div id='type'>{type}</div>
-                     <h3 className='summary'>
-                         <span id="name">{summary.name}</span>
-                        { summary.company && <span id="company">, {summary.company}, </span>}
-                        { summary.location && <span>{summary.location}</span>}
-                     </h3>
-                     <ul>
-                         {details.map(detail => <li>{detail}</li>)}
-                     </ul>
+                <h3 className='summary'>
+                    <span id="name">{summary.name}</span>
+                    { summary.company && <span id="company">, {summary.company}, </span>}
+                    { summary.location && <span>{summary.location}</span>}
+                    <span>     {date}</span>
+                    {/* TO DO: insert more spaces*/}
+                </h3>
+                <ul>
+                    {details.map(detail => <li>{detail}</li>)}
+                </ul>
+                {/* TODO: make image path based on img props */}
+                {img && 
+                    <a href={img.link} target="_blank" rel="noopener noreferrer">
+                        <img src={calendar} className="snapshot" alt={img.alt} />
+                    </a>
+                }
             </div>
         )
     }
