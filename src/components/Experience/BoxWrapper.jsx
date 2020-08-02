@@ -1,7 +1,8 @@
 import React from 'react';
-import './Box.css';
+import './BoxWrapper.css';
 import p5 from 'p5';
 import Box from './Box';
+import $ from 'jquery';
 
 class BoxWrapper extends React.Component {
     
@@ -15,10 +16,14 @@ class BoxWrapper extends React.Component {
     }
 
     render() {
-        const {type, summary, details, index} = this.props.object;        
-        let parentWidth, parentHeight, width, height, marginLeft, marginTop, top;
-        if (this.props.width > 0) {
-            parentWidth = this.props.width;
+        const {type, summary, details, index} = this.props.object;  
+        const {parentHeight, parentWidth} = this.props;
+        console.log('window height ', $(window).height());
+        const height = $(window).height();
+        //for position absolute, width is accurate but height is 0.
+         
+        let width, marginLeft, marginTop, top;
+        if (parentWidth > 0) {
             if (parentWidth > 800) {    //3 boxes
                 width = parentWidth/3;
                 if (index % 3 === 1) {
@@ -33,24 +38,24 @@ class BoxWrapper extends React.Component {
             }
 
         }
-        if (this.props.height > 0) {
-            parentHeight = this.props.height;
-            if (parentWidth > 800) {    //3 boxes
-                if (index % 3 === 1) {
-                } else if (index % 3 === 2) {
-                    // marginTop = parentHeight / 3;
-                    top = 100;
-                }
-            } else if (parentWidth > 500) { //2 boxes
-            } else {
+
+        if (parentWidth > 800) {    //3 boxes
+            if (index % 3 === 1) {
+            } else if (index % 3 === 2) {
+                marginTop = height / 4;
+                top = 100;
             }
-            
+        } else if (parentWidth > 500) { //2 boxes
+        } else {
         }
+            
+        console.log('marginTop ', marginTop)
+        console.log('top ', top)
 
         //fix summary style
 
         return(
-            <div id="boxSketch" style={{width: width, marginLeft: marginLeft, marginTop: marginTop, top: top}}>
+            <div id="boxSketch" style={{width: width, marginLeft: marginLeft, marginTop: marginTop, marginRight: 10}}>
                 <div id='type'>{type}</div>
                      <h3 className='summary'>
                          <span id="name">{summary.name}</span>

@@ -1,13 +1,13 @@
 import * as React from 'react';
 import BoxWrapper from './BoxWrapper';
-import {nyu} from './Constants';
-import { Row, Col } from 'react-bootstrap';
+import { nyu, calendar} from './Constants';
+import { Container, Row, Col } from 'react-bootstrap';
 
 class Experience extends React.Component{
 
     constructor(props) {
         super(props);
-        this.column = React.createRef();
+        this.container = React.createRef();
         this.state = {
            boxes: 0, 
            containerWidth: 0,
@@ -17,25 +17,23 @@ class Experience extends React.Component{
     }
 
     componentDidMount () {
-        this.setState({
-            containerHeight: this.column.current.offsetHeight,
-            containerWidth: this.column.current.offsetWidth,
+        this.container.current && this.setState({
+            containerHeight: this.container.current.offsetHeight,
+            containerWidth: this.container.current.offsetWidth,
         });
     }
 
     render() {
         const {containerHeight, containerWidth} = this.state;
 
-        console.log(containerHeight, containerWidth);
+        console.log(`Container component width ${this.state.containerWidth}, height ${this.state.containerHeight}`);
 
         return (
-            <div className="experience">
-                {/* <h1>Experience</h1> */}
-                <Row>
-                    <Col md={4} ref={this.column}>
-                        <BoxWrapper object={nyu} height={containerHeight} width={containerWidth}/>
-                    </Col>
-                </Row>
+            <div className="exp">
+                <Container fluid ref={this.container}>
+                    <BoxWrapper object={nyu} parentHeight={containerHeight} parentWidth={containerWidth}/>
+                    <BoxWrapper object={calendar} parentHeight={containerHeight} parentWidth={containerWidth}/>
+                </Container>   
             </div>
         )
     }
