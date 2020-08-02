@@ -48,16 +48,31 @@ img {
     margin: auto;
 }
 
-#highlight1 {
+/* #highlight1 {
     display: inline;
     animation-name: 'animation1';
     animation-duration: '1s';
-}
+} */
 
 .home {
     display: inline;
-    animation-name: 'animation1';
-    animation-duration: '1s';
+    -webkit-animation-name: animation1;
+    animation-name: animation1;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+    /* background-color: rgba(110, 68, 255, 0.7) */
+}
+
+@keyframes animation1 {
+    from {
+        background-color: #fff;
+        width: 0%;
+        white-space: nowrap;
+    }
+    to {
+        background-color: rgba(110, 68, 255, 0.7);
+        width: 25%;
+    }
 }
 
 .experience {
@@ -65,10 +80,6 @@ img {
 }
 
 .skills {
-    
+
 }
 
-@keyframes animation1 {
-    from {background: #fff}
-    to {background: rgba(110, 68, 255, 0.7);}
-}
