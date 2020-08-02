@@ -4,7 +4,6 @@ import { Col, Row } from 'react-bootstrap';
 import './NavbarStyles.css';
 import GithubLogo from '../../images/github.png';
 import LinkedinLogo from '../../images/linkedin-logo.png';
-import $ from "jquery";
 
 class Navbar extends React.Component {
 
@@ -19,38 +18,38 @@ class Navbar extends React.Component {
         }
     }
 
+    //IMPROVE: simplify the code
     handleActive(to) {
         console.log(`to ${to}`);
-        if (to =='home') {
+        if (to === 'home') {
             this.setState({
-                link1: `link ${to}`,
-                link2: 'link', 
+                link1: `animation ${to}`,
+                link2: '', 
+                link3: '', 
+                link4: '', 
+            })
+        } else if (to === 'experience') {
+            this.setState({
+                link1: 'link',
+                link2: `animation ${to}`, 
                 link3: 'link', 
                 link4: 'link', 
             })
-        } else if (to == 'experience') {
-            this.setState({
-                link1: 'link',
-                link2: `link ${to}`, 
-                link3: 'link', 
-                link4: 'link', 
-            })
-        } else if (to == 'skills') {
+        } else if (to === 'skills') {
             this.setState({
                 link1: 'link',
                 link2: 'link', 
-                link3: `link ${to}`, 
+                link3: `animation ${to}`, 
                 link4: 'link', 
             })
-        } else if (to == 'coursework') {
+        } else if (to === 'coursework') {
             this.setState({
                 link1: 'link',
                 link2: 'link', 
                 link3: 'link', 
-                link4: `link ${to}`, 
+                link4: `animation ${to}`, 
             })
         }
-        console.log(`this.state.link1 ${this.state.link1}`)
     }
 
     render() {
@@ -60,21 +59,21 @@ class Navbar extends React.Component {
                 <h1 id='initials'>RS</h1>
                 <Row className="logos">
                     <Col>
-                        <a href="https://github.com/rebeccashi" target="_blank">
+                        <a href="https://github.com/rebeccashi" target="_blank" rel="noopener noreferrer">
                             <img src={GithubLogo} alt='Github'/>
                         </a>
                     </Col>
                     <Col>
-                        <a href="https://www.linkedin.com/in/xiaoyi-s-b312a3106/" target="_blank">
+                        <a href="https://www.linkedin.com/in/xiaoyi-s-b312a3106/" target="_blank" rel="noopener noreferrer">
                             <img src={LinkedinLogo} alt='Linkedin' id='linkedin'/>
                         </a>
                     </Col>
                 </Row>
                 <div className='links'>
-                    <Row><Link onSetActive={this.handleActive} activeClass="active" to='home' className={this.state.link1} id='highlight1' spy={true} smooth={true} duration={500}>Home</Link></Row>
-                    <Row><Link onSetActive={this.handleActive} activeClass="active" to='experience' className={this.state.link2} spy={true} smooth={true} duration={500}>Experience</Link></Row>
-                    <Row><Link onSetActive={this.handleActive} activeClass="active" to='skills' className={this.state.link3} spy={true} smooth={true} duration={500}>Skills</Link></Row>
-                    <Row><Link onSetActive={this.handleActive} activeClass="active" to='coursework' className={this.state.link4} spy={true} smooth={true} duration={500}>Coursework</Link></Row>
+                    <Row><Link onSetActive={this.handleActive} activeClass="active" to='home' className='link' spy={true} smooth={true} duration={500}><span className={this.state.link1}>Home</span></Link></Row>
+                    <Row><Link onSetActive={this.handleActive} activeClass="active" to='experience' className='link' spy={true} smooth={true} duration={500}><span className={this.state.link2}>Experience</span></Link></Row>
+                    <Row><Link onSetActive={this.handleActive} activeClass="active" to='skills' className="link" spy={true} smooth={true} duration={500}><span className={this.state.link3}>Skills</span></Link></Row>
+                    <Row><Link onSetActive={this.handleActive} activeClass="active" to='coursework' className="link" spy={true} smooth={true} duration={500}><span className={this.state.link4}>Coursework</span></Link></Row>
                 </div>
             </div>
         );

@@ -54,13 +54,15 @@ img {
     animation-duration: '1s';
 } */
 
-.home {
+.animation {
     display: inline;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+}
+
+.home {
     -webkit-animation-name: animation1;
     animation-name: animation1;
-    animation-duration: 700ms;
-    animation-fill-mode: forwards;
-    /* background-color: rgba(110, 68, 255, 0.7) */
 }
 
 @keyframes animation1 {
@@ -70,16 +72,55 @@ img {
         white-space: nowrap;
     }
     to {
-        background-color: rgba(110, 68, 255, 0.7);
-        width: 25%;
+        background-color: rgba(110, 68, 255, 0.5);
+        width: 100%;       
+        /* width is uselss bc of inline */
     }
 }
 
 .experience {
+    -webkit-animation-name: animation2;
+    animation-name: animation2;
+}
 
+@keyframes animation2 {
+    from {
+        background-color: #fff;
+        width: 0%;
+        white-space: nowrap;
+    }
+    to {
+        background-color: rgba(237, 200, 173);
+        /* TO DO: less red */
+        width: 60%;
+    }
 }
 
 .skills {
+    -webkit-animation-name: animation3;
+    animation-name: animation3;
+}
 
+@keyframes animation3 {
+    from {
+        background-color: #fff;
+    }
+    to {
+        background-color: rgba(141, 244, 244, 1);
+    }
+}
+
+.coursework {
+    -webkit-animation-name: animation4;
+    animation-name: animation4;
+}
+
+@keyframes animation4 {
+    from {
+        background-color: #fff;
+    }
+    to {
+        background-color: rgba(186, 181, 255, 1);
+    }
 }
 
