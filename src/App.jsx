@@ -35,8 +35,8 @@ class App extends React.Component {
             </Col>
             <Col lg={10} xs={9}>
               <Element name="home" className="element"><HomeWrapper/></Element>
-              <Element name="experience" className="element"><Experience/></Element>
-              <Element name="skills" className="element"><SkillsWrapper/></Element>
+              <Element name="experience" className="element" id='expTop'><Experience/></Element>
+              <Element name="skills" className="element" id='skillsTop'><SkillsWrapper/></Element>
               <Element name="coursework" className="element"><Coursework /></Element>
             </Col>
           </Row>
