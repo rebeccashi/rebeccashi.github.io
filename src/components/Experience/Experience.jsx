@@ -1,6 +1,6 @@
 import * as React from 'react';
 import BoxWrapper from './BoxWrapper';
-import { nyu, calendar} from './Constants';
+import { nyu, calendar, cssa } from './Constants';
 import { Container, Row, Col } from 'react-bootstrap';
 
 class Experience extends React.Component{
@@ -18,21 +18,19 @@ class Experience extends React.Component{
 
     componentDidMount () {
         this.container.current && this.setState({
-            containerHeight: this.container.current.offsetHeight,
             containerWidth: this.container.current.offsetWidth,
         });
     }
 
     render() {
-        const {containerHeight, containerWidth} = this.state;
-
-        console.log(`Container component width ${this.state.containerWidth}, height ${this.state.containerHeight}`);
+        const {containerWidth} = this.state;
 
         return (
             <div className="exp">
                 <Container fluid ref={this.container}>
-                    <BoxWrapper object={nyu} parentHeight={containerHeight} parentWidth={containerWidth}/>
-                    <BoxWrapper object={calendar} parentHeight={containerHeight} parentWidth={containerWidth}/>
+                    <BoxWrapper object={nyu} parentWidth={containerWidth}/>
+                    <BoxWrapper object={calendar} parentWidth={containerWidth}/>
+                    <BoxWrapper object={cssa} parentWidth={containerWidth}/>
                 </Container>   
             </div>
         )
