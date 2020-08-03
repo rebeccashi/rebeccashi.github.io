@@ -46,13 +46,8 @@ img {
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     margin: auto;
+    cursor: pointer;
 }
-
-/* #highlight1 {
-    display: inline;
-    animation-name: 'animation1';
-    animation-duration: '1s';
-} */
 
 .animation {
     display: inline;
@@ -90,7 +85,7 @@ img {
         white-space: nowrap;
     }
     to {
-        background-color: rgba(237, 200, 173);
+        background-color: rgba(246, 223, 186);
         /* TO DO: less red */
         width: 60%;
     }

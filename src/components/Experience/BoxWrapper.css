@@ -27,12 +27,20 @@
     padding-right: 30px;
 }
 
+.summary {
+    background-color: rgba(246, 223, 186);
+    display: inline;
+    word-wrap: break-word;
+    position: relative;
+    padding: 2px;
+}
+
 #type {
     font-family: 'Roboto Mono', monospace;
     border: 1px solid black;
     padding: 3px;
     width: 10em;
-    /* text-transform: uppercase; */
+    margin-bottom: 5px;
 }
 
 h3 {
