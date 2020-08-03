@@ -23,6 +23,8 @@
 
 #boxSketch {
     position: absolute;
+    padding-top: 30px;
+    padding-right: 30px;
 }
 
 #type {
@@ -54,5 +56,12 @@ li {
     font-family: 'Montserrat', sans-serif;
     padding: 2px;
     font-size: 16px;
-    /* open sans, source sans pro */
+}
+
+.snapshot {
+    width: 80%;
+    cursor: pointer;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
 }

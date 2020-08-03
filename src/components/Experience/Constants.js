@@ -30,7 +30,6 @@ const calendar = {
         'A task management website powered by React, Redux, and Typescript that enables the user to create new events and updates based on user input.'
     ],
     img: {
-        path: "./calendar-snapshot.png", 
         alt: "calendar snapshot",
         link: 'https://rebeccashi.github.io/calendar/'
     }
@@ -48,7 +47,6 @@ const cssa = {
         ''
     ],
     img: {
-        path: "./cssa.png", 
         alt: "cssa snapshot",
         link: 'https://www.cssanyu.org/www5/',
     }

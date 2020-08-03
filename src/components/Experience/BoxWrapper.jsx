@@ -4,6 +4,7 @@ import p5 from 'p5';
 import Box from './Box';
 import $ from 'jquery';
 import calendar from '../../images/calendar-snapshot.png';
+import cssa from '../../images/cssa.png'
 
 class BoxWrapper extends React.Component {
     
@@ -51,8 +52,6 @@ class BoxWrapper extends React.Component {
         } else {
         }
             
-        // console.log('marginTop ', marginTop)
-
         return(
             <div id="boxSketch" width={width} style={{width: width, marginLeft: marginLeft, marginTop: marginTop, marginRight: 10}}>
                 <div id='type'>{type}</div>
@@ -66,11 +65,16 @@ class BoxWrapper extends React.Component {
                 <ul>
                     {details.map(detail => <li>{detail}</li>)}
                 </ul>
-                {/* TODO: make image path based on img props */}
                 {img && 
+                    (img.alt==='calendar snapshot' &&
+                        <a href={img.link} target="_blank" rel="noopener noreferrer">
+                            <img src={calendar} className="snapshot" alt={img.alt} />
+                        </a>
+                   ||img.alt === 'cssa snapshot' && 
                     <a href={img.link} target="_blank" rel="noopener noreferrer">
-                        <img src={calendar} className="snapshot" alt={img.alt} />
-                    </a>
+                                <img src={cssa} className="snapshot" alt={img.alt} />
+                            </a>
+                    )
                 }
             </div>
         )
