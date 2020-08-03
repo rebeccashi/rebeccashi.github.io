@@ -1,20 +1,24 @@
 import { cloud1 } from './Constants';
 
 function Skills(p) {
-    let moss;
-    let lightMoss;
-    let lightGray;
-
+    let moss, lightMoss, lightGray;
+    let scaleX, scaleY, width;
+    
     p.setup = function() {
-        p.createCanvas(p.windowWidth * 0.75, p.windowHeight);
-        // console.log(windowWidth*0.75 + ", " +windowHeight);
-        p.background(255);
+        p.createCanvas(p.windowWidth / 12 * 10, p.windowHeight);
+        // p.background(255);
         moss = p.color(141,244,244);
         lightMoss = p.color(200,249,249);
         lightGray = p.color(201, 207, 207);
+
     }
 
     p.draw = function() {
+        // WARNING: did not get the width props yet 
+        width = p.width;
+        scaleX = width / 957;
+        // console.log(width)
+
         p.noStroke();
         // p.fill(240);
         // p.rect(485, 40, 475, 530);
@@ -51,6 +55,13 @@ function Skills(p) {
             {skill: "git", value: 4},
             {skill: "OpenSSL", value: 3}
         ];
+
+        const art = [
+            {skill: "Photoshop", value: 3},
+            {skill: "Web Design", value: 4},
+            {skill: "Open Processing", value: 3},
+            {skill: "Digital Art", value: 5},
+        ]
     };
 
     /*cloud = curveShape + drawCircles 

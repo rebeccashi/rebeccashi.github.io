@@ -3,7 +3,7 @@ const HomeBackground = (p) => {
     let purple;
 
     p.setup = () => {
-        let canvas = p.createCanvas(p.windowWidth, p.windowHeight);
+        let canvas = p.createCanvas(p.windowWidth/12*10, p.windowHeight);
         // purple = p.color('#B1AAFF');
         purple = p.color('#d3cfff');
         p.background(255);

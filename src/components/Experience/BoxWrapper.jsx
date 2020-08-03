@@ -21,7 +21,6 @@ class BoxWrapper extends React.Component {
         const { index, type, summary, date, details, img } = this.props.object;  
         const { parentWidth } = this.props;
         const height = $(window).height();
-        img && console.log(img.path);
          
         let width, marginLeft, marginTop;
         if (parentWidth > 0) {
@@ -46,7 +45,7 @@ class BoxWrapper extends React.Component {
             } else if (index % 3 === 2) {
                 marginTop = height / 4;
             } else if (index % 3 === 0) {
-                marginTop = height/3;
+                marginTop = height / 3;
             }
         } else if (parentWidth > 500) { //2 boxes
         } else {

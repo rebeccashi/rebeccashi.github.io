@@ -1,6 +1,10 @@
 const Box = (p) => {
+
+    let width;
+
     p.setup = () => {
-        let canvas = p.createCanvas(p.windowWidth, p.windowHeight);
+        width = p.width;
+        let canvas = p.createCanvas(width, p.windowHeight);
         canvas.position(0,0);
         canvas.style('z-index', -1);
     }
