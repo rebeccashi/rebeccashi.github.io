@@ -19,9 +19,7 @@ class HomeWrapper extends React.Component {
     }
 
     render() {
-        //REWRITE BIO!!!!1
         //Typing "Hi there!"
-        //color highlighting effect --> needs research
         return(
             <div id="backgroundSketch" className="sketch">
                 <Row>
