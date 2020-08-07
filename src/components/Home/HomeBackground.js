@@ -1,9 +1,17 @@
 const HomeBackground = (p) => {
 
     let purple;
+    let width;
 
     p.setup = () => {
-        let canvas = p.createCanvas(p.windowWidth/12*10, p.windowHeight);
+        //bootstrap sm breakpoint is 576px
+        if (p.windowWidth < 576) {
+            width = p.windowWidth / 12 * 9;
+        } else {
+            width = p.windowWidth / 12 * 10;
+        }
+
+        let canvas = p.createCanvas(width, p.windowHeight);
         // purple = p.color('#B1AAFF');
         purple = p.color('#d3cfff');
         p.background(255);
@@ -12,7 +20,7 @@ const HomeBackground = (p) => {
     }
 
     p.draw = () => {
-
+        
     }
 };
 
