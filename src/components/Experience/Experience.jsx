@@ -24,6 +24,7 @@ class Experience extends React.Component{
 
     render() {
         const {containerWidth} = this.state;
+        // TODO: Add a padding to the bottom or reconsider every section's padding
 
         return (
             <div className="exp">
