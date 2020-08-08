@@ -30,10 +30,10 @@ class App extends React.Component {
     return (
       <Container fluid>
           <Row>
-            <Col lg={2} xs={3}>
+            <Col sm={2} xs={3}>
               <Navbar />
             </Col>
-            <Col lg={10} xs={9}>
+            <Col sm={10} xs={9}>
               <Element name="home" className="element"><HomeWrapper/></Element>
               <Element name="experience" className="element" id='expTop'><Experience/></Element>
               <Element name="skills" className="element" id='skillsTop'><SkillsWrapper/></Element>
