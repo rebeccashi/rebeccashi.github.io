@@ -17,9 +17,9 @@ const HomeBackground = (p) => {
         p.background(255);
         canvas.position(0,0);
         canvas.style('z-index', -1);
-        // p.rectMode(p.CENTER);
+        p.rectMode(p.CENTER);
         p.angleMode(p.DEGREES);
-        p.frameRate(50)
+        p.frameRate(40)
     }
 
     p.windowResized = () => {
@@ -51,20 +51,21 @@ const HomeBackground = (p) => {
             console.log(`variable ${variable}`);
             let v = p.frameCount % 100 / 100
             console.log(`v ${v}`)
-            p.rect(textLeft, textTop, textWidth, 360)
+            p.rect(textLeft + textWidth/2, textTop + 180, textWidth, 360)
 
             //counter clockwise --> clockwise
             // p.translate(-90, 50)
             p.translate(-50, 20)
             // p.rotate(-11 * Math.abs(p.cos(p.frameCount/3)));
-            p.rotate(-2 + 7 * variable)
-            p.rect(textLeft, textTop, textWidth, 375)
+            p.rotate(-3 + 5 * variable)
+            p.rect(textLeft + textWidth/2, textTop + 375/2, textWidth, 375 + 10)
 
             p.push()
-            p.rotate(3)
-            p.rotate(-13 * variable);
-            p.translate(85, -40)
-            p.rect(textLeft, textTop, textWidth, 365)
+            // p.rotate(2)
+            p.rotate(-15 * variable);
+            // p.translate(80, -40)
+            p.translate(45, -52)
+            p.rect(textLeft + textWidth/2, textTop + 365/2, textWidth + 10, 365)
             p.pop()
 
         }    
