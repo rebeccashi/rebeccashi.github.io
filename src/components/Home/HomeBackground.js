@@ -22,33 +22,43 @@ const HomeBackground = (p) => {
     }
 
     p.windowResized = () => {
+        if (p.windowWidth < 576) {
+            width = p.windowWidth / 12 * 9;
+        } else {
+            width = p.windowWidth / 12 * 10;
+        }
         p.resizeCanvas(width, p.windowHeight);
     }
 
     p.draw = () => {
-        let textWidth = width * 10 / 12;
-        let textLeft = width/12;
-        //marginTop is 10%
-        let textTop = p.windowHeight * 0.2;
-        let centerLeft = textLeft + textWidth/2;
-        let centerTop = textTop + 350/2;
-        //TODO: find a way to calculate textHeight
-        p.noFill();
-        p.strokeWeight(1)
-        p.rect(textLeft, textTop, textWidth, 350)
-        // p.rect(centerLeft, centerTop, textWidth, 350)
-        p.rotate(-11);
-        p.translate(-90, 50)
-        p.rect(textLeft, textTop, textWidth, 370)
-        // p.rect(centerLeft, centerTop, textWidth, 370)
+        //bootstrap md breakpoint
+        if (p.windowWidth < 768) {
+            p.clear();
+        } else {
+            let textWidth = width * 10 / 12;
+            let textLeft = width/12;
+            //marginTop is 10%
+            let textTop = p.windowHeight * 0.2;
+            let centerLeft = textLeft + textWidth/2;
+            let centerTop = textTop + 350/2;
+            //TODO: find a way to calculate textHeight
+            p.noFill();
+            p.strokeWeight(1)
+            p.rect(textLeft, textTop, textWidth, 350)
+            // p.rect(centerLeft, centerTop, textWidth, 350)
+            p.rotate(-11);
+            p.translate(-90, 50)
+            p.rect(textLeft, textTop, textWidth, 370)
+            // p.rect(centerLeft, centerTop, textWidth, 370)
 
-        // p.rotate(-22);
-        // p.translate(-110,30)
-        // p.rect(textLeft, textTop, textWidth * 0.8, 400)
+            // p.rotate(-22);
+            // p.translate(-110,30)
+            // p.rect(textLeft, textTop, textWidth * 0.8, 400)
 
-        p.rotate(20);
-        p.translate(87, -140)
-        p.rect(textLeft, textTop, textWidth, 360)
+            p.rotate(20);
+            p.translate(87, -140)
+            p.rect(textLeft, textTop, textWidth, 360)
+        }    
 
     }
 };
