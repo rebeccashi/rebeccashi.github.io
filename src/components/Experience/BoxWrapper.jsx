@@ -65,14 +65,15 @@ class BoxWrapper extends React.Component {
                     {details.map(detail => <li>{detail}</li>)}
                 </ul>
                 {img && 
-                    (img.alt==='calendar snapshot' &&
+                    ( (img.alt==='calendar snapshot' &&
                         <a href={img.link} target="_blank" rel="noopener noreferrer">
                             <img src={calendar} className="snapshot" alt={img.alt} />
-                        </a>
-                   ||img.alt === 'cssa snapshot' && 
+                        </a>)
+                   | (img.alt === 'cssa snapshot' && 
                     <a href={img.link} target="_blank" rel="noopener noreferrer">
                                 <img src={cssa} className="snapshot" alt={img.alt} />
                             </a>
+                        )
                     )
                 }
             </div>

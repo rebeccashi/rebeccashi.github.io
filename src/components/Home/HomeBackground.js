@@ -53,17 +53,15 @@ const HomeBackground = (p) => {
             console.log(`v ${v}`)
             p.rect(textLeft + textWidth/2, textTop + 180, textWidth, 360)
 
-            //counter clockwise --> clockwise
             // p.translate(-90, 50)
             p.translate(-50, 20)
             // p.rotate(-11 * Math.abs(p.cos(p.frameCount/3)));
-            p.rotate(-3 + 5 * variable)
-            p.rect(textLeft + textWidth/2, textTop + 375/2, textWidth, 375 + 10)
+            p.rotate(-3 + 4.7 * variable)
+            p.rect(textLeft + textWidth/2, textTop + 375/2, textWidth + 10, 375 + 10)
 
+            //REFACTOR: does the rotate change if I make this in a separate function
             p.push()
-            // p.rotate(2)
             p.rotate(-15 * variable);
-            // p.translate(80, -40)
             p.translate(45, -52)
             p.rect(textLeft + textWidth/2, textTop + 365/2, textWidth + 10, 365)
             p.pop()

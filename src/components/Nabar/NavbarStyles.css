@@ -67,7 +67,7 @@ img {
         white-space: nowrap;
     }
     to {
-        background-color: rgba(110, 68, 255, 0.5);
+        background-color: rgba(110, 68, 255, 0.6);
         width: 100%;       
         /* width is uselss bc of inline */
     }
