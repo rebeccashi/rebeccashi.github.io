@@ -21,6 +21,10 @@ const HomeBackground = (p) => {
         p.angleMode(p.DEGREES);
     }
 
+    p.windowResized = () => {
+        p.resizeCanvas(width, p.windowHeight);
+    }
+
     p.draw = () => {
         let textWidth = width * 10 / 12;
         let textLeft = width/12;
