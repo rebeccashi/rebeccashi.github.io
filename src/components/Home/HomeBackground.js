@@ -19,6 +19,7 @@ const HomeBackground = (p) => {
         canvas.style('z-index', -1);
         // p.rectMode(p.CENTER);
         p.angleMode(p.DEGREES);
+        p.frameRate(50)
     }
 
     p.windowResized = () => {
@@ -44,20 +45,28 @@ const HomeBackground = (p) => {
             //TODO: find a way to calculate textHeight
             p.noFill();
             p.strokeWeight(1)
-            p.rect(textLeft, textTop, textWidth, 350)
-            // p.rect(centerLeft, centerTop, textWidth, 350)
-            p.rotate(-11);
-            p.translate(-90, 50)
-            p.rect(textLeft, textTop, textWidth, 370)
-            // p.rect(centerLeft, centerTop, textWidth, 370)
-
-            // p.rotate(-22);
-            // p.translate(-110,30)
-            // p.rect(textLeft, textTop, textWidth * 0.8, 400)
-
-            p.rotate(20);
-            p.translate(87, -140)
+            p.clear()
+            // let variable = Math.abs(p.cos(p.frameCount/3));
+            const variable = -Math.abs(p.sin(p.frameCount/2))
+            console.log(`variable ${variable}`);
+            let v = p.frameCount % 100 / 100
+            console.log(`v ${v}`)
             p.rect(textLeft, textTop, textWidth, 360)
+
+            //counter clockwise --> clockwise
+            // p.translate(-90, 50)
+            p.translate(-50, 20)
+            // p.rotate(-11 * Math.abs(p.cos(p.frameCount/3)));
+            p.rotate(-2 + 7 * variable)
+            p.rect(textLeft, textTop, textWidth, 375)
+
+            p.push()
+            p.rotate(3)
+            p.rotate(-13 * variable);
+            p.translate(85, -40)
+            p.rect(textLeft, textTop, textWidth, 365)
+            p.pop()
+
         }    
 
     }
