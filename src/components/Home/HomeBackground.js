@@ -48,9 +48,7 @@ const HomeBackground = (p) => {
             p.clear()
             // let variable = Math.abs(p.cos(p.frameCount/3));
             const variable = -Math.abs(p.sin(p.frameCount/2))
-            console.log(`variable ${variable}`);
             let v = p.frameCount % 100 / 100
-            console.log(`v ${v}`)
             p.rect(textLeft + textWidth/2, textTop + 180, textWidth, 360)
 
             // p.translate(-90, 50)

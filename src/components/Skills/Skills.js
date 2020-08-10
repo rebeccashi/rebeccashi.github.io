@@ -10,7 +10,7 @@ function Skills(p) {
         moss = p.color(141,244,244);
         lightMoss = p.color(200,249,249);
         lightGray = p.color(201, 207, 207);
-
+        p.frameRate(40)
     }
 
     p.draw = function() {
@@ -33,6 +33,7 @@ function Skills(p) {
         ];
 	
         //front end circles
+        p.clear()
         p.fill(moss);
         p.drawCircle(730, 320, frontend[1]);	//React
         p.drawCircle(875, 300, frontend[3]);	//HTML
@@ -75,14 +76,13 @@ function Skills(p) {
         //make the cirlces go left and right 
         const unit = 25;
         p.fill(moss);
+        // const random = Math.random(0,1) * 5; 
+        // const variable = p.sin(p.frameCount/100)
+        // p.ellipse(x + random, y + random, obj.value * unit);
         p.ellipse(x, y, obj.value * unit);
-        // fill(0);
-        // fill(37, 40, 61);
+        // p.ellipse(x, y, (obj.value + variable) * unit);
         p.fill(54, 58, 59);		//dark blue
         p.textFont('Montserrat');
-        // p.textFont('Proxima Nova');
-        // p.textFont('Noto Sans JP');
-        // p.textFont('Lora');
         p.textAlign(p.CENTER, p.CENTER);
         if (obj.value === 5) {
             p.textSize(24);
