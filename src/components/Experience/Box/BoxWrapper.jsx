@@ -3,8 +3,8 @@ import './BoxWrapper.css';
 import p5 from 'p5';
 import Box from './Box';
 import $ from 'jquery';
-import calendar from '../../images/calendar-snapshot.png';
-import cssa from '../../images/cssa.png'
+import calendar from '../../../images/calendar-snapshot.png';
+import cssa from '../../../images/cssa.png'
 
 class BoxWrapper extends React.Component {
     
