@@ -50,7 +50,7 @@ class BoxWrapper extends React.Component {
         } else if (parentWidth > 500) { //2 boxes
         } else {
         }
-            
+          
         return(
             <div id="boxSketch" width={width} style={{width: width, marginLeft: marginLeft, marginTop: marginTop, marginRight: 10}}>
                 <div id='type'>{type}</div>
@@ -69,7 +69,7 @@ class BoxWrapper extends React.Component {
                         <a href={img.link} target="_blank" rel="noopener noreferrer">
                             <img src={calendar} className="snapshot" alt={img.alt} />
                         </a>)
-                   | (img.alt === 'cssa snapshot' && 
+                   || (img.alt === 'cssa snapshot' && 
                     <a href={img.link} target="_blank" rel="noopener noreferrer">
                                 <img src={cssa} className="snapshot" alt={img.alt} />
                             </a>
