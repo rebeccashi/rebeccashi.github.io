@@ -1,5 +1,5 @@
 import * as React from 'react';
-import BoxWrapper from './BoxWrapper';
+import BoxWrapper from './Box/BoxWrapper';
 import { nyu, calendar, cssa } from './Constants';
 import { Container, Row, Col } from 'react-bootstrap';
 
