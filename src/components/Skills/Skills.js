@@ -35,6 +35,7 @@ function Skills(p) {
         //front end circles
         p.clear()
         p.fill(moss);
+        //Make 
         p.drawCircle(730, 320, frontend[1]);	//React
         p.drawCircle(875, 300, frontend[3]);	//HTML
         p.drawCircle(640, 190, frontend[4]);	//CSS
@@ -42,25 +43,29 @@ function Skills(p) {
         p.drawCircle(580, 420, frontend[0]);	//Javascript
         p.drawCircle(830, 430, frontend[2]);	//Typescript
         
-        //cloud
-        // stroke(lightMoss);
-        // strokeWeight(4);
+        //cloud1
         p.stroke(20);
         p.strokeWeight(1);
         p.noFill();
         p.curveShape(cloud1);
+
         
         const others = [
             {skill: "Java", value: 5},
             {skill: "C", value: 3},
+            {skill: "Python", value: 3},
             {skill: "git", value: 4},
             {skill: "OpenSSL", value: 3}
         ];
 
+        // const cloud2 = [
+        //     {x: , y: },
+        // ]
+
         const art = [
             {skill: "Photoshop", value: 3},
             {skill: "Web Design", value: 4},
-            {skill: "Open Processing", value: 3},
+            {skill: "P5.js", value: 3},
             {skill: "Digital Art", value: 5},
         ]
     };
