@@ -27,7 +27,7 @@ class Experience extends React.Component{
         // TODO: Add a padding to the bottom or reconsider every section's padding
 
         return (
-            <div className="exp">
+            <div id="exp">
                 <Container fluid ref={this.container}>
                     <BoxWrapper object={nyu} parentWidth={containerWidth}/>
                     <BoxWrapper object={calendar} parentWidth={containerWidth}/>

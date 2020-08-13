@@ -1,13 +1,11 @@
 .element{
-  /* display: inline-block; */
   /* width: 100%; */
   min-height: 100vh;
   /* overflow: scroll; */
 }
 
 #expTop {
-  /* background-color: #EDC8AD; */
-  /* background-color:#E7CCB5; */
+  height: 120vh;
 }
 
 #skillsTop {
