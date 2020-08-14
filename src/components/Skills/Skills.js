@@ -6,22 +6,20 @@ function Skills(p) {
     
     p.setup = function() {
         p.createCanvas(p.windowWidth / 12 * 10, p.windowHeight);
-        // p.background(255);
         moss = p.color(141,244,244);
         lightMoss = p.color(200,249,249);
         lightGray = p.color(201, 207, 207);
-        p.frameRate(40)
+        // p.background(lightGray);
+        // p.frameRate(40)
     }
 
     p.draw = function() {
         // WARNING: did not get the width props yet 
-        width = p.width;
+        width = p.windowWidth / 12 * 10;
         scaleX = width / 957;
         // console.log(width)
 
         p.noStroke();
-        // p.fill(240);
-        // p.rect(485, 40, 475, 530);
 	
         const frontend = [
             {skill: "Javascript", value: 4},	//0
@@ -33,7 +31,7 @@ function Skills(p) {
         ];
 	
         //front end circles
-        p.clear()
+        // p.clear()
         p.fill(moss);
         //Make 
         p.drawCircle(730, 320, frontend[1]);	//React
@@ -58,9 +56,27 @@ function Skills(p) {
             {skill: "OpenSSL", value: 3}
         ];
 
-        // const cloud2 = [
-        //     {x: , y: },
-        // ]
+        const cloud2 = [
+            {x: 5, y: 160},    //left most
+            {x: 18, y: 120},
+            {x: 40, y: 100},
+            {x: 70, y: 40}, 
+            {x: 150, y: 5},    //peak
+            {x: 213, y: 45},
+            {x: 265, y: 70},
+            {x: 360, y: 55},     //smaller peak
+            {x: 430, y: 105},
+            {x: 490, y: 135},
+            {x: 520, y: 190},   //right
+            {x: 495, y: 230},
+            {x: 440, y: 250},
+            {x: 340, y: 335},   //bottom right
+            {x: 250, y: 315},
+            {x: 175, y: 265},
+            {x: 65, y: 270},    //bottom left
+            {x: 15, y: 210},
+        ]
+        p.curveShape(cloud2);
 
         const art = [
             {skill: "Photoshop", value: 3},
