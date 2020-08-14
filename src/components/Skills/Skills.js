@@ -27,18 +27,18 @@ function Skills(p) {
             {skill: "Typescript", value: 3},	//2
             {skill: "HTML", value: 4},				//3
             {skill: "CSS", value: 4},					//4
-            {skill: "Node.js",value: 2},			//5
+            {skill: "Node.js",value: 3},			//5
         ];
 	
         //front end circles
         // p.clear()
         p.fill(moss);
-        p.drawCircle(770, 320, frontend[1]);	//React
-        p.drawCircle(915, 300, frontend[3]);	//HTML
-        p.drawCircle(680, 190, frontend[4]);	//CSS
-        p.drawCircle(780, 210, frontend[5]);	//Node
-        p.drawCircle(620, 420, frontend[0]);	//Javascript
-        p.drawCircle(870, 430, frontend[2]);	//Typescript
+        p.drawCircle(765, 335, frontend[1]);	//React
+        p.drawCircle(915, 290, frontend[3]);	//HTML
+        p.drawCircle(680, 180, frontend[4]);	//CSS
+        p.drawCircle(780, 215, frontend[5]);	//Node
+        p.drawCircle(620, 405, frontend[0]);	//Javascript
+        p.drawCircle(870, 425, frontend[2]);	//Typescript
         
         //cloud1
         p.stroke(20);
@@ -60,8 +60,11 @@ function Skills(p) {
         //cloud 2 circles
         p.fill(moss);
         p.noStroke();
-        p.drawCircle(170, 75, others[3])   //git
-        p.drawCircle(380, 150, others[0])  //Java
+        p.drawCircle(170, 75, others[3])    //git
+        p.drawCircle(385, 155, others[0])   //Java
+        p.drawCircle(330, 270, others[1])   //C
+        p.drawCircle(100, 160, others[2])   //Python
+        p.drawCircle(250, 165, others[4])
 
         const art = [
             {skill: "Photoshop", value: 3},
@@ -69,6 +72,30 @@ function Skills(p) {
             {skill: "P5.js", value: 3},
             {skill: "Digital Art", value: 5},
         ]
+
+        const cloud3 = [
+            {x: 285, y: 345},   //top
+            {x: 335, y: 360},
+            {x: 390, y: 400},
+            {x: 455, y: 385},   //second peak
+            {x: 490, y: 425},
+            {x: 515, y: 485},
+            {x: 560, y: 525},
+            {x: 570, y: 565},   //right most
+            {x: 550, y: 585},
+            {x: 500, y: 600},
+            {x: 410, y: 635},   //bottom
+            {x: 260, y: 590},
+            {x: 180, y: 600},
+            {x: 120, y: 540},   //left most
+            {x: 140, y: 490},
+            {x: 195, y: 445},
+            {x: 235, y: 380},
+        ]
+        p.stroke(20);
+        p.strokeWeight(1);
+        p.noFill();
+        p.curveShape(cloud3)
     };
 
     /*cloud = curveShape + drawCircles 
@@ -80,8 +107,8 @@ function Skills(p) {
     p.drawCircle = (x, y, obj) => {
 
         //make the cirlces go left and right 
-        // const unit = 25;
-        const unit = 23;
+        const unit = 25;
+        // const unit = 23;
         p.fill(moss);
         // const random = Math.random(0,1) * 5; 
         // const variable = p.sin(p.frameCount/100)
@@ -94,8 +121,10 @@ function Skills(p) {
         if (obj.value === 5) {
             p.textSize(24);
         } else if (obj.value === 4) {
+            obj.skill.length <= 5 && p.textSize(20)
             p.textSize(18);
         } else if (obj.value === 3) {
+            obj.skill.length <= 5 && p.textSize(16)
             p.textSize(14);
         } else {
             p.textSize(12);
