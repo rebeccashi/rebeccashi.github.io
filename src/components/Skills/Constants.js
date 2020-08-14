@@ -42,4 +42,24 @@ const cloud2 = [
     {x: 30, y: 210},
 ]
 
-export { cloud1, cloud2 };
+const cloud3 = [
+    {x: 285, y: 355},   //top
+    {x: 335, y: 370},
+    {x: 390, y: 410},
+    {x: 455, y: 395},   //second peak
+    {x: 490, y: 435},
+    {x: 515, y: 495},
+    {x: 560, y: 535},
+    {x: 570, y: 575},   //right most
+    {x: 550, y: 595},
+    {x: 500, y: 610},
+    {x: 395, y: 650},   //bottom
+    {x: 260, y: 600},
+    {x: 180, y: 610},
+    {x: 120, y: 550},   //left most
+    {x: 140, y: 500},
+    {x: 195, y: 455},
+    {x: 235, y: 390},
+]
+
+export { cloud1, cloud2, cloud3 };

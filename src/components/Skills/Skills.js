@@ -1,11 +1,11 @@
-import { cloud1, cloud2 } from './Constants';
+import { cloud1, cloud2, cloud3 } from './Constants';
 
 function Skills(p) {
     let moss, lightMoss, lightGray;
     let scaleX, scaleY, width;
     
     p.setup = function() {
-        p.createCanvas(p.windowWidth / 12 * 10, p.windowHeight);
+        p.createCanvas(p.windowWidth / 12 * 10, p.windowHeight * 1.1);
         moss = p.color(141,244,244);
         lightMoss = p.color(200,249,249);
         lightGray = p.color(201, 207, 207);
@@ -23,11 +23,11 @@ function Skills(p) {
 	
         const frontend = [
             {skill: "Javascript", value: 4},	//0
-            {skill: "React", value: 5},				//1
+            {skill: "React", value: 5},			//1
             {skill: "Typescript", value: 3},	//2
-            {skill: "HTML", value: 4},				//3
-            {skill: "CSS", value: 4},					//4
-            {skill: "Node.js",value: 3},			//5
+            {skill: "HTML", value: 4},		    //3
+            {skill: "CSS", value: 4},			//4
+            {skill: "Node.js",value: 3},	    //5
         ];
 	
         //front end circles
@@ -67,35 +67,23 @@ function Skills(p) {
         p.drawCircle(250, 165, others[4])
 
         const art = [
-            {skill: "Photoshop", value: 3},
-            {skill: "Web Design", value: 4},
-            {skill: "P5.js", value: 3},
-            {skill: "Digital Art", value: 5},
+            {skill: "Photoshop", value: 3},     //0
+            {skill: "Web Design", value: 4},    //1
+            {skill: "P5.js", value: 3},         //2
+            {skill: "Digital Art", value: 5},   //3
         ]
 
-        const cloud3 = [
-            {x: 285, y: 345},   //top
-            {x: 335, y: 360},
-            {x: 390, y: 400},
-            {x: 455, y: 385},   //second peak
-            {x: 490, y: 425},
-            {x: 515, y: 485},
-            {x: 560, y: 525},
-            {x: 570, y: 565},   //right most
-            {x: 550, y: 585},
-            {x: 500, y: 600},
-            {x: 410, y: 635},   //bottom
-            {x: 260, y: 590},
-            {x: 180, y: 600},
-            {x: 120, y: 540},   //left most
-            {x: 140, y: 490},
-            {x: 195, y: 445},
-            {x: 235, y: 380},
-        ]
         p.stroke(20);
         p.strokeWeight(1);
         p.noFill();
         p.curveShape(cloud3)
+
+        p.noStroke();
+        p.fill(moss);
+        p.drawCircle(295, 420, art[1])      //Web Design
+        p.drawCircle(415, 570, art[3])      //Digital Art
+        p.drawCircle(250, 520, art[2])      //p5.js
+        p.drawCircle(430, 450, art[0])      //Photoshop
     };
 
     /*cloud = curveShape + drawCircles 
@@ -119,13 +107,22 @@ function Skills(p) {
         p.textFont('Montserrat');
         p.textAlign(p.CENTER, p.CENTER);
         if (obj.value === 5) {
-            p.textSize(24);
+            if (obj.skill.length <= 5) {
+                p.textSize(24);
+            } else {
+                p.textSize(20)
+            }
         } else if (obj.value === 4) {
-            obj.skill.length <= 5 && p.textSize(20)
-            p.textSize(18);
+            if (obj.skill.length <= 5){
+                p.textSize(20)
+            } else {
+                p.textSize(16);
+            }
         } else if (obj.value === 3) {
-            obj.skill.length <= 5 && p.textSize(16)
-            p.textSize(14);
+            obj.skill.length <= 5 ?
+                p.textSize(16)
+            :
+                p.textSize(13);
         } else {
             p.textSize(12);
         }
