@@ -1,4 +1,4 @@
-import { cloud1 } from './Constants';
+import { cloud1, cloud2 } from './Constants';
 
 function Skills(p) {
     let moss, lightMoss, lightGray;
@@ -33,7 +33,6 @@ function Skills(p) {
         //front end circles
         // p.clear()
         p.fill(moss);
-        //Make 
         p.drawCircle(770, 320, frontend[1]);	//React
         p.drawCircle(915, 300, frontend[3]);	//HTML
         p.drawCircle(680, 190, frontend[4]);	//CSS
@@ -47,36 +46,22 @@ function Skills(p) {
         p.noFill();
         p.curveShape(cloud1);
 
-        
+        //cloud2
         const others = [
-            {skill: "Java", value: 5},
-            {skill: "C", value: 3},
-            {skill: "Python", value: 3},
-            {skill: "git", value: 4},
-            {skill: "OpenSSL", value: 3}
+            {skill: "Java", value: 5},      //0
+            {skill: "C", value: 3},         //1
+            {skill: "Python", value: 3},    //2
+            {skill: "git", value: 4},       //3
+            {skill: "OpenSSL", value: 3}    //4
         ];
 
-        const cloud2 = [
-            {x: 15, y: 165},    //left most
-            {x: 35, y: 125},
-            {x: 60, y: 100},
-            {x: 90, y: 40}, 
-            {x: 170, y: 5},    //peak
-            {x: 233, y: 45},
-            {x: 285, y: 70},
-            {x: 380, y: 55},     //smaller peak
-            {x: 450, y: 105},
-            {x: 510, y: 135},
-            {x: 540, y: 190},   //right
-            {x: 515, y: 230},
-            {x: 460, y: 250},
-            {x: 360, y: 335},   //bottom right
-            {x: 270, y: 315},
-            {x: 195, y: 265},
-            {x: 85, y: 270},    //bottom left
-            {x: 30, y: 210},
-        ]
         p.curveShape(cloud2);
+
+        //cloud 2 circles
+        p.fill(moss);
+        p.noStroke();
+        p.drawCircle(170, 75, others[3])   //git
+        p.drawCircle(380, 150, others[0])  //Java
 
         const art = [
             {skill: "Photoshop", value: 3},
@@ -95,7 +80,8 @@ function Skills(p) {
     p.drawCircle = (x, y, obj) => {
 
         //make the cirlces go left and right 
-        const unit = 25;
+        // const unit = 25;
+        const unit = 23;
         p.fill(moss);
         // const random = Math.random(0,1) * 5; 
         // const variable = p.sin(p.frameCount/100)
