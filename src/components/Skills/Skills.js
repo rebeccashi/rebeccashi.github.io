@@ -34,12 +34,12 @@ function Skills(p) {
         // p.clear()
         p.fill(moss);
         //Make 
-        p.drawCircle(760, 320, frontend[1]);	//React
-        p.drawCircle(905, 300, frontend[3]);	//HTML
-        p.drawCircle(670, 190, frontend[4]);	//CSS
-        p.drawCircle(770, 210, frontend[5]);	//Node
-        p.drawCircle(610, 420, frontend[0]);	//Javascript
-        p.drawCircle(860, 430, frontend[2]);	//Typescript
+        p.drawCircle(770, 320, frontend[1]);	//React
+        p.drawCircle(915, 300, frontend[3]);	//HTML
+        p.drawCircle(680, 190, frontend[4]);	//CSS
+        p.drawCircle(780, 210, frontend[5]);	//Node
+        p.drawCircle(620, 420, frontend[0]);	//Javascript
+        p.drawCircle(870, 430, frontend[2]);	//Typescript
         
         //cloud1
         p.stroke(20);
@@ -57,24 +57,24 @@ function Skills(p) {
         ];
 
         const cloud2 = [
-            {x: 15, y: 160},    //left most
-            {x: 28, y: 120},
-            {x: 50, y: 100},
-            {x: 80, y: 40}, 
-            {x: 160, y: 5},    //peak
-            {x: 223, y: 45},
-            {x: 275, y: 70},
-            {x: 370, y: 55},     //smaller peak
-            {x: 440, y: 105},
-            {x: 500, y: 135},
-            {x: 530, y: 190},   //right
-            {x: 505, y: 230},
-            {x: 450, y: 250},
-            {x: 350, y: 335},   //bottom right
-            {x: 260, y: 315},
-            {x: 185, y: 265},
-            {x: 75, y: 270},    //bottom left
-            {x: 25, y: 210},
+            {x: 15, y: 165},    //left most
+            {x: 35, y: 125},
+            {x: 60, y: 100},
+            {x: 90, y: 40}, 
+            {x: 170, y: 5},    //peak
+            {x: 233, y: 45},
+            {x: 285, y: 70},
+            {x: 380, y: 55},     //smaller peak
+            {x: 450, y: 105},
+            {x: 510, y: 135},
+            {x: 540, y: 190},   //right
+            {x: 515, y: 230},
+            {x: 460, y: 250},
+            {x: 360, y: 335},   //bottom right
+            {x: 270, y: 315},
+            {x: 195, y: 265},
+            {x: 85, y: 270},    //bottom left
+            {x: 30, y: 210},
         ]
         p.curveShape(cloud2);
 
