@@ -44,9 +44,10 @@ const cloud2 = [
 
 const cloud3 = [
     {x: 285, y: 355},   //top
+    {x: 300, y: 358},
     {x: 335, y: 370},
     {x: 390, y: 410},
-    {x: 455, y: 395},   //second peak
+    {x: 455, y: 400},   //second peak
     {x: 490, y: 435},
     {x: 515, y: 495},
     {x: 560, y: 535},
@@ -60,6 +61,7 @@ const cloud3 = [
     {x: 140, y: 500},
     {x: 195, y: 455},
     {x: 235, y: 390},
+    {x: 260, y: 365},
 ]
 
 export { cloud1, cloud2, cloud3 };
