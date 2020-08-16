@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Element, Events} from 'react-scroll'
-import Navbar from './components/Nabar/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import SkillsWrapper from './components/Skills/SkillsWrapper';
 import Experience from './components/Experience/Experience';
 import Coursework from './components/Coursework/Coursework';
