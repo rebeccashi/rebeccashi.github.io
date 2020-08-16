@@ -44,7 +44,7 @@ const cssa = {
     },
     details: [
         'I collaborated with another NYU student to develop and maintain a website for a student organization, Chinese Students Scholars Association.',
-        ''
+        'Designed the website with engaging content that attracts new members and raises awareness of the club at campus',
     ],
     img: {
         alt: "cssa snapshot",
