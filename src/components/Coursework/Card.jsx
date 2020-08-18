@@ -1,14 +1,27 @@
 import * as React from 'react';
-import {Row, Col} from 'react-bootstrap';
+import {Row, Col, Container} from 'react-bootstrap';
 import './Card.css'
 
-const Card = () => {
+const Card = (props) => {
+    const club = props.club;
     return (
-        <Row className='card'>
-            <Col sm={3}>
-                <div className='circle'>Hello</div>
-            </Col>
-        </Row>
+        <Container className='card'>
+            <Row>
+                <Col xs={3}>
+                    <div className='circle'>
+                        <span className='name'>{club.name}</span>
+                    </div>
+                </Col>
+                <Col xs={9}>
+                    <div className='text'>
+                        <span>{club.date}</span>
+                        <ul>
+                            {club.details.map(detail => <li>{detail}</li>)}
+                        </ul>
+                    </div>
+                </Col>
+            </Row>
+        </Container>
     )
 }
 

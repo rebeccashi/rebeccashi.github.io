@@ -6,4 +6,23 @@ const courses = [
     'Linear Algebra', 
 ]
 
-export {courses};
+const FC = {
+    name: 'Freshman Circuit',
+    date: '2018-2019',
+    details: [
+        'Toured companies in the technology industry.',
+        'Attended workshops regarding computer science and career development.'
+    ]
+} 
+
+/*
+    const template = {
+        name: ,
+        acronym: optional,
+        details:[
+            '',
+        ]
+    }
+*/
+
+export { courses, FC};

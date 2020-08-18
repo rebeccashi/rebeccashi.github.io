@@ -7,3 +7,8 @@
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
 }
+
+.heading {
+    font-family: 'Cardo', serif;
+    font-style: italic;
+}
