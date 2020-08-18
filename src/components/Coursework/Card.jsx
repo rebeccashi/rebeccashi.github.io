@@ -14,7 +14,7 @@ const Card = (props) => {
                 </Col>
                 <Col xs={9}>
                     <div className='text'>
-                        <span>{club.date}</span>
+                        <span className='date'>{club.date}</span>
                         <ul>
                             {club.details.map(detail => <li>{detail}</li>)}
                         </ul>

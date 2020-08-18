@@ -11,7 +11,7 @@ const Coursework = () =>{
             {/*Top school work section */}
             <Row>
                 <Col sm={6}>
-                    <h2 className='courseHeading'>Courses</h2>
+                    <p className='courseHeading'>Courses</p>
                     <ul>
                         {courses.map(
                             (course, index) => <li key={index}>{course}</li>
@@ -23,7 +23,7 @@ const Coursework = () =>{
 
             {/* Clubs */}
             <Col xs={12}>
-                    <h2 className='heading'>Clubs</h2>
+                    {/* <h2 className='heading'>Clubs</h2> */}
                 </Col>
             <Card club={FC}/>
         </div>

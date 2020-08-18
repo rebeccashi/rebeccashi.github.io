@@ -11,8 +11,8 @@
 
 .circle {
     background-color:  rgba(186, 181, 255, 1);
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     text-align: center;
     align-items: center;
@@ -26,5 +26,10 @@
 }
 
 .text {
-    /* margin: 0 50%; */
+    font-size: 18px;
+}
+
+.date {
+    padding-left: 40px;
+    text-align: center;
 }
