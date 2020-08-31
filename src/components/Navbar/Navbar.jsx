@@ -42,7 +42,7 @@ class Navbar extends React.Component {
                 link3: `animation ${to}`, 
                 link4: 'link', 
             })
-        } else if (to === 'coursework') {
+        } else if (to === 'academics') {
             this.setState({
                 link1: 'link',
                 link2: 'link', 

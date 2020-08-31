@@ -86,7 +86,6 @@ img {
     }
     to {
         background-color: rgba(246, 223, 186);
-        /* TO DO: less red */
         width: 60%;
     }
 }
