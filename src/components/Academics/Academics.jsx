@@ -20,15 +20,18 @@ const Academics = () =>{
                     </div>
                 </Col>
                 <Col sm={6}>
+                    <p className='info'>Expected Graduation: Spring 2022</p>
                     <p className='info'>GPA: 3.8<br/></p>
                     <p className='info'><a href={resumeURL}>Link to Resume</a></p>
                 </Col>
             </Row>
 
             {/* Clubs */}
-            <Col xs={12}>
-                <span className='heading'>Extracurriculars</span>
-            </Col>
+            <Row>
+                <Col xs={12}>
+                    <span className='heading'>Extracurriculars</span>
+                </Col>
+            </Row>
             <Card club={FC}/>
         </div>
     )
