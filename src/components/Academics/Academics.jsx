@@ -3,7 +3,6 @@ import {Row, Col} from 'react-bootstrap';
 import { courses, resumeURL } from './Constants';
 import Card from './Card';
 import { FC } from './Constants'; 
-import schoolIcon from '../../images/school.svg';
 import './Academics.css'
 
 const Academics = () =>{
@@ -22,7 +21,7 @@ const Academics = () =>{
                 <Col sm={6}>
                     <p className='info'>Expected Graduation: Spring 2022</p>
                     <p className='info'>GPA: 3.8<br/></p>
-                    <p className='info'><a href={resumeURL}>Link to Resume</a></p>
+                    <p className='info'><a href={resumeURL} id='resume'>Link to Resume</a></p>
                 </Col>
             </Row>
 
