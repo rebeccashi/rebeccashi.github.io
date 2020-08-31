@@ -1,0 +1,38 @@
+#academics {
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+
+.courseHeading {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.courseList {
+    padding-bottom: 30px;    
+}
+
+.course {
+    background: rgba(186, 181, 255, 0.5);
+    margin: 4px 6px 4px 6px;
+    padding: 2px 4px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.info {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding-bottom: 0;
+    margin-bottom: 8px;
+}
+
+.heading {
+    /* font-family: 'PT Sans'; */
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: -10px;
+}

@@ -1,12 +1,11 @@
 .card {
     padding: 20px;
-    width: 100%;
-    /* border: 1px solid rgb(171, 159, 187); */
-    margin-top: 30px;
+    max-width: 100%;
+    margin-top: 20px;
     display: flex;  
     align-items: center;
-    /* background: rgb(241, 241, 247); */
     background: rgb(222, 226, 255, 0.6);
+    border-radius: 20px;
 }
 
 .circle {

@@ -73,7 +73,7 @@ class Navbar extends React.Component {
                     <Row><Link onSetActive={this.handleActive} activeClass="active" to='home' className='link' spy={true} smooth={true} duration={500}><span className={this.state.link1}>Home</span></Link></Row>
                     <Row><Link onSetActive={this.handleActive} activeClass="active" to='experience' className='link' spy={true} smooth={true} duration={500}><span className={this.state.link2}>Experience</span></Link></Row>
                     <Row><Link onSetActive={this.handleActive} activeClass="active" to='skills' className="link" spy={true} smooth={true} duration={500}><span className={this.state.link3}>Skills</span></Link></Row>
-                    <Row><Link onSetActive={this.handleActive} activeClass="active" to='coursework' className="link" spy={true} smooth={true} duration={500}><span className={this.state.link4}>Coursework</span></Link></Row>
+                    <Row><Link onSetActive={this.handleActive} activeClass="active" to='academics' className="link" spy={true} smooth={true} duration={500}><span className={this.state.link4}>Academics</span></Link></Row>
                 </div>
             </div>
         );

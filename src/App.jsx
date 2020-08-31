@@ -4,7 +4,7 @@ import { Element, Events} from 'react-scroll'
 import Navbar from './components/Navbar/Navbar';
 import SkillsWrapper from './components/Skills/SkillsWrapper';
 import Experience from './components/Experience/Experience';
-import Coursework from './components/Coursework/Coursework';
+import Academics from './components/Academics/Academics';
 import { Container, Row, Col } from 'react-bootstrap';
 import HomeWrapper from './components/Home/HomeWrapper';
 
@@ -37,7 +37,7 @@ class App extends React.Component {
               <Element name="home" className="element"><HomeWrapper/></Element>
               <Element name="experience" className="element" id='expTop'><Experience/></Element>
               <Element name="skills" className="element" id='skillsTop'><SkillsWrapper/></Element>
-              <Element name="coursework" className="element"><Coursework /></Element>
+              <Element name="academics" className="element"><Academics/></Element>
             </Col>
           </Row>
         </Container>

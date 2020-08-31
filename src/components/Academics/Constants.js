@@ -15,6 +15,8 @@ const FC = {
     ]
 } 
 
+const resumeURL = ""
+
 /*
     const template = {
         name: ,
@@ -25,4 +27,4 @@ const FC = {
     }
 */
 
-export { courses, FC};
+export { courses, FC, resumeURL};
