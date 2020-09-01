@@ -4,6 +4,7 @@ import { Col, Row } from 'react-bootstrap';
 import './NavbarStyles.css';
 import GithubLogo from '../../images/github.png';
 import LinkedinLogo from '../../images/linkedin-logo.png';
+import EmailLogo from '../../images/mail.png';
 
 class Navbar extends React.Component {
 
@@ -58,17 +59,17 @@ class Navbar extends React.Component {
             <div className='navbar'>
                 <h1 id='initials'>RS</h1>
                 <Row className="logos">
-                    <Col>
-                        <a href="https://github.com/rebeccashi" target="_blank" rel="noopener noreferrer">
-                            <img src={GithubLogo} alt='Github'/>
-                        </a>
-                    </Col>
-                    <Col>
-                        <a href="https://www.linkedin.com/in/xiaoyi-s-b312a3106/" target="_blank" rel="noopener noreferrer">
-                            <img src={LinkedinLogo} alt='Linkedin' id='linkedin'/>
-                        </a>
-                    </Col>
+                    <a href="https://github.com/rebeccashi" target="_blank" rel="noopener noreferrer">
+                        <img src={GithubLogo} alt='Github'/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/xiaoyi-s-b312a3106/" target="_blank" rel="noopener noreferrer">
+                        <img src={LinkedinLogo} alt='Linkedin' id='linkedin'/>
+                    </a>
+                    {/* <a href="mailto:xs938@nyu.edu?subject=hello" target="_blank" rel="noopener noreferrer">
+                        <img src={EmailLogo} alt='email' id='email'/>
+                    </a> */}
                 </Row>
+                <hr className='divider'/>
                 <div className='links'>
                     <Row><Link onSetActive={this.handleActive} activeClass="active" to='home' className='link' spy={true} smooth={true} duration={500}><span className={this.state.link1}>Home</span></Link></Row>
                     <Row><Link onSetActive={this.handleActive} activeClass="active" to='experience' className='link' spy={true} smooth={true} duration={500}><span className={this.state.link2}>Experience</span></Link></Row>
