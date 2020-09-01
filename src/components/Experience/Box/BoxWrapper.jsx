@@ -7,15 +7,32 @@ import calendar from '../../../images/calendar-snapshot.png';
 import cssa from '../../../images/cssa.png'
 
 class BoxWrapper extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            canvasWidth: 0,
+        }
+    }
     
     componentDidMount() {
         this.canvas = new p5(Box, "boxSketch");
         //the name in quotation marks corresponds to the div id
+        // this.canvas.pushProps(this.state.canvasWidth);
     }
 
     componentWillUnmount() {
         this.canvas.remove();
     }
+
+    componentDidUpdate() {
+        // memoize
+        this.canvas.pushProps(this.state.canvasWidth);
+    }
+
+    // componentWillReceiveProps(nextProps) {
+    //     this.canvas.pushProps(canvasWidth);
+    // }
 
     render() {
         const { index, type, summary, date, details, img } = this.props.object;  
@@ -50,6 +67,8 @@ class BoxWrapper extends React.Component {
         } else if (parentWidth > 500) { //2 boxes
         } else {
         }
+
+        // this.setState({canvasWidth: width})
           
         return(
             <div id="boxSketch" width={width} style={{width: width, marginLeft: marginLeft, marginTop: marginTop, marginRight: 10}}>

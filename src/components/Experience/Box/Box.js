@@ -1,6 +1,7 @@
 const Box = (p) => {
 
     let width;
+    let props;
 
     p.setup = () => {
         width = p.width;
@@ -12,6 +13,12 @@ const Box = (p) => {
     p.draw = () => {
 
     }
+
+    p.pushProps = function (_props) {
+        props = _props;
+        console.log(props)
+        p.loop();
+      }
 }
 
 export default Box;
