@@ -9,25 +9,36 @@
     text-align: center;
 }
 
-.logos {
-    padding: 40%;
-    top: 32%;
-    position: absolute;
-}
-
-img {
-    width: 25px;
-    position: relative;
-}
-
 #initials {
     font-family: 'Playfair Display', serif;
     font-size: 3rem !important;
     text-align: center;
-    padding: 20px 0;
     position: absolute;
     width: 100%;
-    top: 30%;
+    top: 32%;
+}
+
+.logos {
+    padding: 0 20%;
+    margin-top: -45px;
+    position: absolute;
+    margin-left: 15%;
+    text-align: center;
+}
+
+img {
+    width: 25px;
+    margin: 5px;
+    text-align: center;
+}
+
+.divider {
+    width: 80%;
+    margin-top: 40px;
+    position: absolute;
+    border-top: 1px solid black;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .links {

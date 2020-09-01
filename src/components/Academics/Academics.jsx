@@ -9,16 +9,16 @@ const Academics = () =>{
     return (
         <div id='academics'>
             {/*Top school work section */}
-            <Row>
-                <Col sm={6}>
-                    <div className='courseList'>
+            <Row className='top'>
+                <Col sm={12} md={6}>
+                    <div>
                         <h3 className='courseHeading'>Courses</h3>
                         {courses.map(
                             (course, index) => <li key={index} className="course">{course}</li>
                         )}
                     </div>
                 </Col>
-                <Col sm={6}>
+                <Col sm={12} md={6}>
                     <p className='info'>Expected Graduation: Spring 2022</p>
                     <p className='info'>GPA: 3.8<br/></p>
                     <p className='info'><a href={resumeURL} id='resume'>Link to Resume</a></p>

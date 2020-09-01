@@ -1,16 +1,16 @@
 #academics {
-    margin-top: 50px;
+    padding-top: 70px;
     padding-bottom: 0;
+}
+
+.top {
+    margin-bottom: 35px;    
 }
 
 .courseHeading {
     font-family: 'Roboto Mono', monospace;
     font-weight: 500;
     font-size: 20px;
-}
-
-.courseList {
-    margin-bottom: 40px;    
 }
 
 .course {
