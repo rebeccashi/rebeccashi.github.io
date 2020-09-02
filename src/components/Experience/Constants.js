@@ -27,7 +27,8 @@ const calendar = {
         name: 'Calendar',
     },
     details: [
-        'A task management website powered by React, Redux, and Typescript that enables the user to create new events and updates based on user input.'
+        'Created a task management website that enables the user to create new events and updates based on user input.',
+        'Powered by React, Redux, and Typescript.'
     ],
     img: {
         alt: "calendar snapshot",
