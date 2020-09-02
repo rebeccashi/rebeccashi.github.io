@@ -15,7 +15,7 @@ const FC = {
     ]
 } 
 
-const resumeURL = ""
+const resumeURL = "https://docs.google.com/document/d/1KoT-WnBpme11LsvGR0YgHm9YNxHyiZsZV7Sc1amwchQ/edit?usp=sharing"
 
 /*
     const template = {
