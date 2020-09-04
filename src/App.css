@@ -1,8 +1,0 @@
-.element{
-  min-height: 100vh;
-}
-
-#expTop {
-  /* TODO: make it not reliant on viewport height */
-  height: 130vh;
-}
