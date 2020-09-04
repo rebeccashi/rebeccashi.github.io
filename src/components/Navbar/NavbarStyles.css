@@ -18,9 +18,21 @@
     top: 32%;
 }
 
+@media only screen and (max-height: 480px) {
+    #initials {
+        top: 25%;
+    }
+}
+
+@media only screen and (max-height: 350px) {
+    #initials {
+        top: 20%;
+    }
+}
+
 .logos {
     padding: 0 20%;
-    margin-top: -45px;
+    margin-top: -18%;
     position: absolute;
     margin-left: 15%;
     text-align: center;
