@@ -11,7 +11,7 @@ class BoxWrapper extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            canvasWidth: 0,
+            width: 0,
         }
     }
     
@@ -27,7 +27,7 @@ class BoxWrapper extends React.Component {
 
     componentDidUpdate() {
         // memoize
-        this.canvas.pushProps(this.state.canvasWidth);
+        // this.canvas.pushProps(this.state.canvasWidth);
     }
 
     // componentWillReceiveProps(nextProps) {
@@ -37,11 +37,14 @@ class BoxWrapper extends React.Component {
     render() {
         const { index, type, summary, date, details, img } = this.props.object;  
         const { parentWidth } = this.props;
+        // const parentWidth = $(window).innerWidth();
         const height = $(window).height();
+        console.log(parentWidth);
          
         let width, marginLeft, marginTop;
         if (parentWidth > 0) {
             if (parentWidth > 800) {    //3 boxes
+                console.log('3 boxes + ' + parentWidth)
                 width = parentWidth/3 - 10;
                 if (index % 3 === 1) {  //middle element
                     marginLeft = width + 10; 
@@ -51,8 +54,15 @@ class BoxWrapper extends React.Component {
                     marginLeft = width * 2 + 20;
                 }
             } else if (parentWidth > 500) { //2 boxes
+                console.log('2 boxes')
                 width = parentWidth/2;
+                if (index % 2 === 1) {  //first box
+                    marginLeft = 0;
+                } else {    //second box
+                    marginLeft = width; 
+                }
             } else {
+                console.log('1 box' + parentWidth)
                 width = parentWidth;
             }
         }
@@ -65,7 +75,13 @@ class BoxWrapper extends React.Component {
                 marginTop = height / 2;
             }
         } else if (parentWidth > 500) { //2 boxes
+            if (index % 2 === 1) {
+                marginTop = (index-1) * height/2;
+            } else {
+                marginTop = height/3 + (index - 2) * height/2;
+            }
         } else {
+            marginTop = (index - 1) * height / 1.2;
         }
 
         // this.setState({canvasWidth: width})
