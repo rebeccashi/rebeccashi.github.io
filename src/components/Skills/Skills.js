@@ -5,9 +5,23 @@ function Skills(p) {
     let scaleX, scaleY, width;
     
     p.setup = function() {
-        p.createCanvas(p.windowWidth / 12 * 10, 710); //p.windowHeight * 1.1
+        if (p.windowWidth < 576) {
+            width = p.windowWidth / 12 * 9;
+        } else {
+            width = p.windowWidth / 12 * 10;
+        }
+        p.createCanvas(width, 710); //p.windowHeight * 1.1
         moss = p.color(141,244,244);
         lightMoss = p.color(200,249,249);
+    }
+
+    p.windowResized = () => {
+        if (p.windowWidth < 576) {
+            width = p.windowWidth / 12 * 9;
+        } else {
+            width = p.windowWidth / 12 * 10;
+        }
+        p.resizeCanvas(width, 710);
     }
 
     p.draw = function() {
