@@ -1,23 +1,19 @@
 import { cloud1, cloud2, cloud3 } from './Constants';
 
 function Skills(p) {
-    let moss, lightMoss, lightGray;
+    let moss, lightMoss;
     let scaleX, scaleY, width;
     
     p.setup = function() {
-        p.createCanvas(p.windowWidth / 12 * 10, p.windowHeight * 1.1);
+        p.createCanvas(p.windowWidth / 12 * 10, 710); //p.windowHeight * 1.1
         moss = p.color(141,244,244);
         lightMoss = p.color(200,249,249);
-        lightGray = p.color(201, 207, 207);
-        // p.background(lightGray);
-        // p.frameRate(40)
     }
 
     p.draw = function() {
         // WARNING: did not get the width props yet 
         width = p.windowWidth / 12 * 10;
         scaleX = width / 957;
-        // console.log(width)
 
         p.noStroke();
 	
@@ -31,7 +27,6 @@ function Skills(p) {
         ];
 	
         //front end circles
-        // p.clear()
         p.fill(moss);
         p.drawCircle(765, 335, frontend[1]);	//React
         p.drawCircle(915, 290, frontend[3]);	//HTML
