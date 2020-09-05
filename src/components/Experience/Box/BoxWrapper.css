@@ -1,15 +1,19 @@
 #boxSketch {
-    position: absolute;
-    padding-top: 30px;
+    position: relative;
+    padding-top: 80px;
     padding-right: 30px;
+    padding-bottom: 40px;
 }
 
 .summary {
-    background-color: rgba(246, 223, 186);
-    display: inline;
+    text-align: center;
     word-wrap: break-word;
     position: relative;
     padding: 2px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 4px;
 }
 
 #type {
@@ -18,15 +22,9 @@
     padding: 3px;
     width: 10em;
     margin-bottom: 5px;
-}
-
-h3 {
-    /* font-family: 'Montserrat Subrayada', sans-serif; */
-    font-family: 'Montserrat';
-    /* font-weight: 600; */
-    font-size: 16px;
-    padding-top: 8px;
-    padding-bottom: 4px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 li {
@@ -36,9 +34,9 @@ li {
 }
 
 .snapshot {
-    width: 80%;
+    width: 60%;
     cursor: pointer;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: center;
 }
