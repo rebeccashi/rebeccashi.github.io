@@ -108,7 +108,7 @@ img {
         white-space: nowrap;
     }
     to {
-        background-color: rgba(246, 223, 186);
+        background-color: #d3edff;
         width: 60%;
     }
 }
