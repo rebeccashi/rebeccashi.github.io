@@ -59,9 +59,10 @@ function Skills(p) {
         const others = [
             {skill: "Java", value: 5},      //0
             {skill: "C", value: 3},         //1
-            {skill: "Python", value: 3},    //2
+            {skill: "Python", value: 4},    //2
             {skill: "git", value: 4},       //3
-            {skill: "OpenSSL", value: 3}    //4
+            {skill: "OpenSSL", value: 3},   //4
+            {skill: "Swift", value: 3}      //5
         ];
 
         p.curveShape(cloud2);
@@ -70,10 +71,12 @@ function Skills(p) {
         p.fill(moss);
         p.noStroke();
         p.drawCircle(170, 75, others[3])    //git
-        p.drawCircle(385, 155, others[0])   //Java
-        p.drawCircle(330, 270, others[1])   //C
-        p.drawCircle(100, 160, others[2])   //Python
-        p.drawCircle(250, 165, others[4])
+        p.drawCircle(390, 155, others[0])   //Java
+        p.drawCircle(100, 160, others[1])   //C
+        p.drawCircle(330, 270, others[2])   //Python
+        p.drawCircle(265, 145, others[4])   //OpenSSL
+        p.drawCircle(195, 210, others[5])   //Swift
+        
 
         const art = [
             {skill: "Photoshop", value: 3},     //0
