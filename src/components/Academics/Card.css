@@ -1,9 +1,8 @@
 .card {
-    padding: 20px;
+    padding: 30px 30px 20px 30px;
     max-width: 100%;
-    margin-top: 20px;
+    margin: 20px 10px 10px 10px;
     display: flex;  
-    align-items: center;
     background: rgb(222, 226, 255, 0.6);
     border-radius: 20px;
 }
@@ -16,6 +15,7 @@
     text-align: center;
     align-items: center;
     display: flex;
+    margin: 0 auto;
 }
 
 .name {
@@ -28,7 +28,18 @@
     font-size: 18px;
 }
 
-.date {
+.headline {
     padding-left: 40px;
-    text-align: center;
+    /* white-space: pre; */
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+#role {
+    width: 30%;
+}
+
+#date {
+    text-align: right;
+    width: 70%;
 }

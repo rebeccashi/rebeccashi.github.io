@@ -7,14 +7,17 @@ const Card = (props) => {
     return (
         <Container className='card'>
             <Row>
-                <Col xs={3}>
+                <Col xs={2}>
                     <div className='circle'>
                         <span className='name'>{club.name}</span>
                     </div>
                 </Col>
-                <Col xs={9}>
+                <Col xs={10}>
                     <div className='text'>
-                        <span className='date'>{club.date}</span>
+                        <Row className='headline'>
+                            <span id='role'><i>{club.role}</i></span>
+                            <span id='date'>{club.date}</span>
+                        </Row>
                         <ul>
                             {club.details.map(detail => <li>{detail}</li>)}
                         </ul>

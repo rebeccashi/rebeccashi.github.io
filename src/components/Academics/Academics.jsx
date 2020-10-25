@@ -1,8 +1,7 @@
 import * as React from 'react';
 import {Row, Col} from 'react-bootstrap';
-import { courses, resumeURL} from './Constants';
+import { courses, resumeURL, WinC, FC } from './Constants';
 import Card from './Card';
-import { FC } from './Constants'; 
 import './Academics.css'
 
 const Academics = () =>{
@@ -26,12 +25,13 @@ const Academics = () =>{
             </Row>
 
             {/* Clubs */}
-            <Row>
+            <Row className="clubs">
                 <Col xs={12}>
                     <span className='heading'>Extracurriculars</span>
                 </Col>
+                <Card club={WinC}/>
+                <Card club={FC}/>
             </Row>
-            <Card club={FC}/>
         </div>
     )
 };
