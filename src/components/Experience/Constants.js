@@ -3,10 +3,10 @@ const jobTypes = {
     Project: 'Project',   
 };
 
-const nyu = {
+const nyuIT = {
     index: 1,
     type: jobTypes.Work,
-    date: '2019',
+    date: 'May - Sept. 2019',
     summary: {
         name: 'Software Developer',
         company: 'NYU IT',
@@ -54,4 +54,18 @@ const cssa = {
     }
 }
 
-export { jobTypes, nyu, calendar, cssa };
+const nyuGrader = {
+    index: 4,
+    type: jobTypes.Work,
+    date: 'Sept 2020 - Present',
+    summary: {
+        name: 'Computer Science Grader',
+        company: 'New York University',
+        location: 'New York, NY',
+    },
+    details: [
+        'Graded homework of 17 students for the course Computer Systems Organization.',
+    ],
+}
+
+export { jobTypes, nyuIT, nyuGrader, calendar, cssa };
