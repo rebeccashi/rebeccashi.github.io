@@ -83,7 +83,7 @@ class Menu extends React.Component {
                         <img src={EmailLogo} alt='email' id='email'/>
                     </a> */}
                 </Row>
-                <hr className='divider'/>
+                {/* <hr className='divider'/>    */}
                 <div className='links'>
                     <Row><Link onSetActive={this.handleActive} activeClass="active" to='home' className='link' spy={true} smooth={true} duration={500}><span className={this.state.link1}>Home</span></Link></Row>
                     <Row><Link onSetActive={this.handleActive} activeClass="active" to='experience' className='link' spy={true} smooth={true} duration={500}><span className={this.state.link2}>Experience</span></Link></Row>
