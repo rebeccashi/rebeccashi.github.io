@@ -5,9 +5,9 @@ import Navbar from './Desktop/Navbar/Navbar';
 import SkillsWrapper from './Desktop/Skills/SkillsWrapper';
 import Experience from './Desktop/Experience/Experience';
 import Academics from './Desktop/Academics/Academics';
-import { Container, Row, Col } from 'react-bootstrap';
 import HomeWrapper from './Desktop/Home/HomeWrapper';
 import Mobile from './Mobile/Mobile'
+import { Container, Row, Col } from 'react-bootstrap';
 
 class App extends React.Component {
 
@@ -35,6 +35,7 @@ class App extends React.Component {
 
   render(){
     if (!this.detectMobile()) {
+      console.log('Desktop')
       return (
         <Container fluid>
             <Row>
@@ -51,6 +52,7 @@ class App extends React.Component {
           </Container>
         )
     } else {
+      console.log('mobile')
       return (
        <Mobile/>
       )
