@@ -1,5 +1,7 @@
 import * as React from 'react';
 import './TopBar.css';
+import { Row, Col } from 'react-bootstrap';
+import MenuIcon from '../../images/menu-icon.png'
   
 class TopBar extends React.Component{
 
@@ -24,8 +26,14 @@ class TopBar extends React.Component{
         // this.toggleTopbar()
         return (
             <div id='topbar'>
-                <div></div>
-                <h1 className='initials'>RS</h1>
+                <Row>
+                    <Col xs={9} className='initials'>
+                        <h1>RS</h1>
+                    </Col>
+                    <Col xs={3} className='menuIcon'>
+                        <img src={MenuIcon}/>
+                    </Col>
+                </Row>
             </div>
         )
 

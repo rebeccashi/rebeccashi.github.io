@@ -5,6 +5,7 @@ import './Menu.css';
 import GithubLogo from '../../images/github.png';
 import LinkedinLogo from '../../images/linkedin-logo.png';
 
+
 class Menu extends React.Component {
 
     constructor(props) {
@@ -18,11 +19,12 @@ class Menu extends React.Component {
         }
     }
 
-    componentDidMount() {
+    componentDidUpdate() {
         this.toggleMenu();
     }
 
     toggleMenu() {
+        console.log('menu props:' + this.props.menuOpen);
         var menu = document.querySelector(".menu");
         if (this.props.menuOpen) {
             menu.style.display = 'block';
