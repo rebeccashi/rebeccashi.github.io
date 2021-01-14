@@ -18,7 +18,7 @@ class Menu extends React.Component {
             link4: 'link'
         }
     }
-
+    
     componentDidUpdate() {
         this.toggleMenu();
     }
@@ -35,7 +35,7 @@ class Menu extends React.Component {
 
     //IMPROVE: simplify the code
     handleActive(to) {
-        console.log(`to ${to}`);
+        // console.log(`to ${to}`);
         if (to === 'home') {
             this.setState({
                 link1: `animation ${to}`,
@@ -68,6 +68,7 @@ class Menu extends React.Component {
     }
 
     render() {
+        
         //Make logos align in the center
         return (
             <div className='menu'>
@@ -85,10 +86,10 @@ class Menu extends React.Component {
                 </Row>
                 {/* <hr className='divider'/>    */}
                 <div className='links'>
-                    <Row><Link onSetActive={this.handleActive} activeClass="active" to='home' className='link' spy={true} smooth={true} duration={500}><span className={this.state.link1}>Home</span></Link></Row>
-                    <Row><Link onSetActive={this.handleActive} activeClass="active" to='experience' className='link' spy={true} smooth={true} duration={500}><span className={this.state.link2}>Experience</span></Link></Row>
-                    <Row><Link onSetActive={this.handleActive} activeClass="active" to='skills' className="link" spy={true} smooth={true} duration={500}><span className={this.state.link3}>Skills</span></Link></Row>
-                    <Row><Link onSetActive={this.handleActive} activeClass="active" to='academics' className="link" spy={true} smooth={true} duration={500}><span className={this.state.link4}>Academics</span></Link></Row>
+                    <Row><Link onClick={this.props.handleClick} onSetActive={this.handleActive} activeClass="active" to='home' className='link' spy={true} smooth={true} duration={500}><span className={this.state.link1}>Home</span></Link></Row>
+                    <Row><Link onClick={this.props.handleClick} onSetActive={this.handleActive} activeClass="active" to='experience' className='link' spy={true} smooth={true} duration={500}><span className={this.state.link2}>Experience</span></Link></Row>
+                    <Row><Link onClick={this.props.handleClick} onSetActive={this.handleActive} activeClass="active" to='skills' className="link" spy={true} smooth={true} duration={500}><span className={this.state.link3}>Skills</span></Link></Row>
+                    <Row><Link onClick={this.props.handleClick} onSetActive={this.handleActive} activeClass="active" to='academics' className="link" spy={true} smooth={true} duration={500}><span className={this.state.link4}>Academics</span></Link></Row>
                 </div>
             </div>
         );
