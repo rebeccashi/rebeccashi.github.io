@@ -77,10 +77,10 @@ class Mobile extends React.Component {
                 {/* <TopBar menuOpen={this.state.menuOpen}/> */}
                 <Menu menuOpen={this.state.menuOpen} handleClick={this.handleClick}/>
                 {/* For home, no animation. Make the text a separate component */}
-                <Element name="home" className="element"><HomeWrapper/></Element>
-                <Element name="experience" className="element" id='expTop'><Experience/></Element>
-                <Element name="skills" className="element" id='skillsTop'><SkillsWrapper/></Element>
-                <Element name="academics" className="element"><Academics/></Element>
+                <Element name="home-mobile" className="element"><HomeWrapper/></Element>
+                <Element name="experience-mobile" className="element"><Experience/></Element> */}
+                <Element name="skills-mobile" className="element"><SkillsWrapper/></Element>
+                <Element name="academics-mobile" className="element"><Academics/></Element>
             </Container>
         )
     }

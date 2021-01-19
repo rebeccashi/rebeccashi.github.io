@@ -11,6 +11,7 @@ class Menu extends React.Component {
     constructor(props) {
         super(props);
         this.handleActive = this.handleActive.bind(this);
+        this.handleClick = this.handleClick.bind(this);
         this.state = {
             link1: 'link', 
             link2: 'link', 
@@ -35,29 +36,30 @@ class Menu extends React.Component {
 
     //IMPROVE: simplify the code
     handleActive(to) {
-        // console.log(`to ${to}`);
-        if (to === 'home') {
+        console.log(`to ${to}`);
+        // console.log(to)
+        if (to === 'home-mobile') {
             this.setState({
                 link1: `animation ${to}`,
                 link2: '', 
                 link3: '', 
                 link4: '', 
             })
-        } else if (to === 'experience') {
+        } else if (to === 'experience-mobile') {
             this.setState({
                 link1: 'link',
                 link2: `animation ${to}`, 
                 link3: 'link', 
                 link4: 'link', 
             })
-        } else if (to === 'skills') {
+        } else if (to === 'skills-mobile') {
             this.setState({
                 link1: 'link',
                 link2: 'link', 
                 link3: `animation ${to}`, 
                 link4: 'link', 
             })
-        } else if (to === 'academics') {
+        } else if (to === 'academics-mobile') {
             this.setState({
                 link1: 'link',
                 link2: 'link', 
@@ -65,6 +67,12 @@ class Menu extends React.Component {
                 link4: `animation ${to}`, 
             })
         }
+
+    }
+
+    handleClick() {
+        this.props.handleClick()
+        console.log('handleClick function')
     }
 
     render() {
@@ -86,10 +94,10 @@ class Menu extends React.Component {
                 </Row>
                 {/* <hr className='divider'/>    */}
                 <div className='links'>
-                    <Row><Link onClick={this.props.handleClick} onSetActive={this.handleActive} activeClass="active" to='home' className='link' spy={true} smooth={true} duration={500}><span className={this.state.link1}>Home</span></Link></Row>
-                    <Row><Link onClick={this.props.handleClick} onSetActive={this.handleActive} activeClass="active" to='experience' className='link' spy={true} smooth={true} duration={500}><span className={this.state.link2}>Experience</span></Link></Row>
-                    <Row><Link onClick={this.props.handleClick} onSetActive={this.handleActive} activeClass="active" to='skills' className="link" spy={true} smooth={true} duration={500}><span className={this.state.link3}>Skills</span></Link></Row>
-                    <Row><Link onClick={this.props.handleClick} onSetActive={this.handleActive} activeClass="active" to='academics' className="link" spy={true} smooth={true} duration={500}><span className={this.state.link4}>Academics</span></Link></Row>
+                    <Row><Link onClick={this.handleClick} onSetActive={this.handleActive} activeClass="active" to='home-mobile' className='link' spy={true} smooth={true} duration={500}><span className={this.state.link1}>Home</span></Link></Row>
+                    <Row><Link onClick={this.handleClick} onSetActive={this.handleActive} activeClass="active" to='experience-mobile' className='link' spy={true} smooth={true} duration={500}><span className={this.state.link2}>Experience</span></Link></Row>
+                    <Row><Link onClick={this.handleClick} onSetActive={this.handleActive} activeClass="active" to='skills-mobile' className="link" spy={true} smooth={true} duration={500}><span className={this.state.link3}>Skills</span></Link></Row>
+                    <Row><Link onClick={this.handleClick} onSetActive={this.handleActive} activeClass="active" to='academics-mobile' className="link" spy={true} smooth={true} duration={500}><span className={this.state.link4}>Academics</span></Link></Row>
                 </div>
             </div>
         );

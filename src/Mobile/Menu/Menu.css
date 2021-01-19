@@ -57,7 +57,7 @@ img {
     position: absolute;
     margin: auto;
     width: 100%;
-    top: 50%;
+    top: 48%;
 }
 
 .link {
@@ -77,7 +77,7 @@ img {
     animation-fill-mode: forwards;
 }
 
-.home {
+.home-mobile {
     -webkit-animation-name: animation1;
     animation-name: animation1;
 }
@@ -95,7 +95,7 @@ img {
     }
 }
 
-.experience {
+.experience-mobile {
     -webkit-animation-name: animation2;
     animation-name: animation2;
 }
@@ -112,7 +112,7 @@ img {
     }
 }
 
-.skills {
+.skills-mobile {
     -webkit-animation-name: animation3;
     animation-name: animation3;
 }
@@ -126,7 +126,7 @@ img {
     }
 }
 
-.academics {
+.academics-mobile {
     -webkit-animation-name: animation4;
     animation-name: animation4;
 }
