@@ -5,10 +5,10 @@ import {Element, Events} from 'react-scroll';
 import SkillsWrapper from '../Desktop/Skills/SkillsWrapper';
 import Experience from '../Desktop/Experience/Experience';
 import Academics from '../Desktop/Academics/Academics';
-import HomeWrapper from '../Desktop/Home/HomeWrapper';
 import Menu from './Menu/Menu';
 import { Row, Col } from 'react-bootstrap';
 import MenuIcon from '../images/menu-icon.png'
+import Home from './Home/Home';
 
 class Mobile extends React.Component {
 
@@ -77,8 +77,8 @@ class Mobile extends React.Component {
                 {/* <TopBar menuOpen={this.state.menuOpen}/> */}
                 <Menu menuOpen={this.state.menuOpen} handleClick={this.handleClick}/>
                 {/* For home, no animation. Make the text a separate component */}
-                <Element name="home-mobile" className="element"><HomeWrapper/></Element>
-                <Element name="experience-mobile" className="element"><Experience/></Element> */}
+                <Element name="home-mobile" className="element"><Home/></Element>
+                <Element name="experience-mobile" className="element"><Experience/></Element>
                 <Element name="skills-mobile" className="element"><SkillsWrapper/></Element>
                 <Element name="academics-mobile" className="element"><Academics/></Element>
             </Container>

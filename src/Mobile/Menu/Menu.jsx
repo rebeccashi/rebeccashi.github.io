@@ -72,7 +72,6 @@ class Menu extends React.Component {
 
     handleClick() {
         this.props.handleClick()
-        console.log('handleClick function')
     }
 
     render() {
