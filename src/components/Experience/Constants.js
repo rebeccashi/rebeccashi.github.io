@@ -64,7 +64,8 @@ const nyuGrader = {
         location: 'New York, NY',
     },
     details: [
-        'Graded homework of 17 students for the course Computer Systems Organization.',
+        'Wrote test cases and test code to grade students’ homework for the course Computer Systems Organization. ',
+        'Organized meetings with other graders to discuss grading rubric.'
     ],
 }
 

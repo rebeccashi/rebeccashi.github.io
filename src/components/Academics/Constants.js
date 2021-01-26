@@ -1,9 +1,9 @@
 const courses = [
     'Data Structures',
     'Basic Algorithms',
+    'Operating System',
     'Computer Security',
-    'Computer Systems Organization',
-    'Linear Algebra', 
+    'Computer Networks'
 ]
 
 const FC = {
