@@ -2,7 +2,7 @@ import * as React from 'react';
 import TopBar from './TopBar/TopBar'
 import {Container} from 'react-bootstrap';
 import {Element, Events} from 'react-scroll'; 
-import SkillsWrapper from '../Desktop/Skills/SkillsWrapper';
+import SkillsWrapper from './Skills/SkillsWrapper';
 import Experience from '../Desktop/Experience/Experience';
 import Academics from '../Desktop/Academics/Academics';
 import Menu from './Menu/Menu';
