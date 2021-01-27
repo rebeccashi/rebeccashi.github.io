@@ -18,9 +18,12 @@ class SkillsWrapper extends React.Component {
     }
 
     render() {
-        return(
-            <div id="skillsMobileSketch"/>
-        );
+        return (
+            <div></div>
+        )
+        // return(
+        //     <div id="skillsMobileSketch"/>
+        // );
     }
 }
 
