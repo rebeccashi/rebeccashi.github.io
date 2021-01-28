@@ -79,7 +79,7 @@ class Mobile extends React.Component {
                 {/* For home, no animation. Make the text a separate component */}
                 <Element name="home-mobile" className="element"><Home/></Element>
                 <Element name="experience-mobile" className="element"><Experience/></Element>
-                {/* <Element name="skills-mobile" className="element"><SkillsWrapper/></Element> */}
+                <Element name="skills-mobile" className="element"><SkillsWrapper/></Element>
                 <Element name="academics-mobile" className="element"><Academics/></Element>
             </Container>
         )
