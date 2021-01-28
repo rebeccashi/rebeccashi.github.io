@@ -9,8 +9,8 @@
 
 .circle {
     background-color:  rgba(186, 181, 255, 1);
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     text-align: center;
     align-items: center;
@@ -44,4 +44,12 @@
 #date {
     text-align: center;
     width: 100%;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    
 }
