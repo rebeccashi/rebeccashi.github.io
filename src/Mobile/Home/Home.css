@@ -1,18 +1,11 @@
 
-
-.sketch{
-    height: 100vh;
-    position: absolute;
-    width: 100%;
-} 
-
 .bio {
-    margin-top: 20%;
-    padding: 5%;
+    /* margin-top: 30%; */
+    margin: 35% 0 5% 5%;
 }
 
 h2 {
-    /* font-family: 'MuseoModerno', cursive; */
+    font-family: 'MuseoModerno', cursive;
 }
 
 p {

@@ -1,12 +1,12 @@
 import * as React from 'react';
-import {Row, Col} from 'react-bootstrap';
+import { Container,Row, Col} from 'react-bootstrap';
 import { courses, resumeURL, WinC, FC } from '../../Shared/Academics/Constants';
 import Card from './Card';
 import './Academics.css'
 
 const Academics = () =>{
     return (
-        <div id='academics'>
+        <div className='academics-mobile'>
             {/*Top school work section */}
             <Row className='top'>
                 <Col sm={12} md={6}>

@@ -1,7 +1,7 @@
 .card {
     padding: 30px 30px 20px 30px;
     max-width: 100%;
-    margin: 20px 10px 10px 10px;
+    margin: 20px 15px 10px 15px;
     display: flex;  
     background: rgb(222, 226, 255, 0.6);
     border-radius: 20px;
@@ -16,6 +16,7 @@
     align-items: center;
     display: flex;
     margin: 0 auto;
+    margin-bottom: 15px;
 }
 
 .name {
@@ -31,7 +32,7 @@
 .headline {
     padding-left: 40px;
     /* white-space: pre; */
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     width: 100%;
 }
 
