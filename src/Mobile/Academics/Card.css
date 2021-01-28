@@ -1,0 +1,46 @@
+.card {
+    padding: 30px 30px 20px 30px;
+    max-width: 100%;
+    margin: 20px 10px 10px 10px;
+    display: flex;  
+    background: rgb(222, 226, 255, 0.6);
+    border-radius: 20px;
+}
+
+.circle {
+    background-color:  rgba(186, 181, 255, 1);
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+.name {
+    font-family: 'Montserrat';
+    font-style: italic;
+    color: white;
+}
+
+.text {
+    font-size: 18px;
+}
+
+.headline {
+    padding-left: 40px;
+    /* white-space: pre; */
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+#role {
+    width: 100%;
+    text-align: center;
+}
+
+#date {
+    text-align: center;
+    width: 100%;
+}

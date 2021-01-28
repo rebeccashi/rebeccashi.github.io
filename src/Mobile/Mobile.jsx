@@ -4,7 +4,7 @@ import {Container} from 'react-bootstrap';
 import {Element, Events} from 'react-scroll'; 
 import SkillsWrapper from './Skills/SkillsWrapper';
 import Experience from '../Desktop/Experience/Experience';
-import Academics from '../Desktop/Academics/Academics';
+import Academics from './Academics/Academics';
 import Menu from './Menu/Menu';
 import { Row, Col } from 'react-bootstrap';
 import MenuIcon from '../images/menu-icon.png'
@@ -79,7 +79,7 @@ class Mobile extends React.Component {
                 {/* For home, no animation. Make the text a separate component */}
                 <Element name="home-mobile" className="element"><Home/></Element>
                 <Element name="experience-mobile" className="element"><Experience/></Element>
-                <Element name="skills-mobile" className="element"><SkillsWrapper/></Element>
+                {/* <Element name="skills-mobile" className="element"><SkillsWrapper/></Element> */}
                 <Element name="academics-mobile" className="element"><Academics/></Element>
             </Container>
         )
