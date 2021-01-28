@@ -5,7 +5,7 @@ import './SkillsWrapper.css'
 
 class SkillsWrapper extends React.Component {
     componentDidMount() {
-        this.canvas = new p5(Skills, "skillsSketch");
+        this.canvas = new p5(Skills, "skillsDesktopSketch");
         //the name in quotation marks corresponds to the div id
     }
 
@@ -19,7 +19,7 @@ class SkillsWrapper extends React.Component {
 
     render() {
         return(
-            <div id="skillsSketch"/>
+            <div id="skillsDesktopSketch"/>
         );
     }
 }

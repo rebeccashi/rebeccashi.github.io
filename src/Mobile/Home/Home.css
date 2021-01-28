@@ -1,0 +1,41 @@
+
+.bio {
+    margin: 35% 0 5% 5%;
+    font-size: 20px;
+}
+
+h2 {
+    font-family: 'MuseoModerno', cursive;
+}
+
+p {
+    font-family: 'PT Sans';
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+.first {
+    text-align: left;
+}
+
+.second{
+    text-align: right;
+}
+
+#nyu {
+    color: #6E44FF;
+    font-weight: 600;
+}
+
+#cs {
+    /* text-decoration: underline; SOME ANIMATION INSTEAD*/
+    font-style: italic;
+}
+
+#skills {
+    color: #6E44FF;    
+}
+
+#art {
+    color: #6E44FF;    
+}

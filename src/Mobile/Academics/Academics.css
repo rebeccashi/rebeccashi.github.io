@@ -1,0 +1,49 @@
+.academics-mobile {
+    padding-top: 70px;
+    padding-bottom: 0;
+    padding-left: 5%;
+    padding-right: 0;
+}
+
+.top {
+    margin-bottom: 35px;    
+}
+
+.courseHeading {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.course {
+    background: rgba(186, 181, 255, 0.5);
+    margin: 4px 6px 5px 6px;
+    padding: 3px 4px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.info {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding-bottom: 0;
+    margin-bottom: 8px;
+    padding-left: 20px;
+}
+
+#resume {
+    color: rgba(110, 68, 255, 1);
+}
+
+.heading {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: -10px;
+    margin-left: 0;
+}
+
+.clubs {
+    margin-bottom: 30px;
+    width: 100%;
+}
