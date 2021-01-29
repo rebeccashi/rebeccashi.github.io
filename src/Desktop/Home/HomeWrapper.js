@@ -24,7 +24,7 @@ class HomeWrapper extends React.Component {
             <div id="backgroundSketch" className="sketch">
                 <Row>
                     <Col md={1}></Col>
-                    <Col md={10} className='bio'>
+                    <Col md={10} className='desktop-bio'>
                         <h2>Hi there!</h2>
                         <p>
                             I am Xiaoyi Shi and I go by Rebecca. 
