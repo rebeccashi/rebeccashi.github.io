@@ -7,7 +7,7 @@ function Skills(p) {
     let combined, drawn = []
 
     p.setup = function() {
-        p.createCanvas(p.windowWidth, p.windowHeight * 1.5)
+        p.createCanvas(p.windowWidth, p.windowHeight * 1.2)
         moss = p.color(141,244,244);
         // p.background(100);
 
@@ -21,10 +21,6 @@ function Skills(p) {
             let x, y;
             const d = element.value * unit  //diameter
             const r = d/2   //radius
-
-            // x = p.random(p.windowWidth)
-            // y = p.random(p.windowHeight)
-            // console.log(`skill: ${element.skill}, x: ${x}, y: ${y}, r: ${r}`)
             
             do {
                 x = p.random(p.windowWidth)
@@ -51,7 +47,7 @@ function Skills(p) {
 
     function checkCircle(x, y, r, drawn){
         for (let i = 0; i < drawn.length; i++) {
-            if (x + r > p.windowWidth || x - r < 0) {
+            if (x + r > p.windowWidth || x - r < 10 || y-r < 10) {
                 return false
             }
             
