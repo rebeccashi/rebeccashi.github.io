@@ -5,18 +5,18 @@ import './Card.css'
 const Card = (props) => {
     const club = props.club;
     return (
-        <Container className='card'>
+        <Container className='mobile-card'>
             <Row>
                 <Col xs={12}>
-                    <div className='circle'>
-                        <span className='name'>{club.name}</span>
+                    <div className='mobile-circle'>
+                        <span className='mobile-name'>{club.name}</span>
                     </div>
                 </Col>
                 <Col xs={12}>
-                    <div className='text'>
-                        <Row className='headline'>
-                            <span id='role'><i>{club.role}</i></span>
-                            <span id='date'>{club.date}</span>
+                    <div className='mobile-text'>
+                        <Row className='mobile-headline'>
+                            <span id='mobile-role'><i>{club.role}</i></span>
+                            <span id='mobile-date'>{club.date}</span>
                         </Row>
                         <ul>
                             {club.details.map(detail => <li>{detail}</li>)}

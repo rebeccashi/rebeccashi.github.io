@@ -1,4 +1,4 @@
-.card {
+.mobile-card {
     padding: 30px 30px 20px 30px;
     max-width: 100%;
     margin: 20px 15px 10px 15px;
@@ -7,7 +7,7 @@
     border-radius: 20px;
 }
 
-.circle {
+.mobile-circle {
     background-color:  rgba(186, 181, 255, 1);
     width: 120px;
     height: 120px;
@@ -19,34 +19,34 @@
     margin-bottom: 15px;
 }
 
-.name {
+.mobile-name {
     font-family: 'Montserrat';
     font-style: italic;
     color: white;
 }
 
-.text {
+.mobile-text {
     font-size: 18px;
 }
 
-.headline {
+.mobile-headline {
     padding-left: 40px;
     /* white-space: pre; */
     padding-bottom: 10px;
     width: 100%;
 }
 
-#role {
+#mobile-role {
     width: 100%;
     text-align: center;
 }
 
-#date {
+#mobile-date {
     text-align: center;
     width: 100%;
 }
 
-ul {
+.mobile-text ul {
     padding-left: 20px;
 }
 
