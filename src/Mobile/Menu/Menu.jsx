@@ -80,7 +80,7 @@ class Menu extends React.Component {
         return (
             <div className='menu'>
                 <h1 id='mobile-initials'>RS</h1>
-                <Row className="mobile-logos">
+                <div className="mobile-logos">
                     <a href="https://github.com/rebeccashi" target="_blank" rel="noopener noreferrer">
                         <img src={GithubLogo} alt='Github'/>
                     </a>
@@ -90,8 +90,8 @@ class Menu extends React.Component {
                     {/* <a href="mailto:xs938@nyu.edu?subject=hello" target="_blank" rel="noopener noreferrer">
                         <img src={EmailLogo} alt='email' id='email'/>
                     </a> */}
-                </Row>
-                {/* <hr className='divider'/>    */}
+                </div>
+                <hr className='mobile-divider'/>   
                 <div className='mobile-links'>
                     <Row><Link onClick={this.handleClick} onSetActive={this.handleActive} activeClass="active" to='home-mobile' className='link mobile-link' spy={true} smooth={true} duration={500}><span className={this.state.link1}>Home</span></Link></Row>
                     <Row><Link onClick={this.handleClick} onSetActive={this.handleActive} activeClass="active" to='experience-mobile' className='link mobile-link' spy={true} smooth={true} duration={500}><span className={this.state.link2}>Experience</span></Link></Row>
