@@ -9,6 +9,7 @@ import Menu from './Menu/Menu';
 import { Row, Col } from 'react-bootstrap';
 import MenuIcon from '../images/menu-icon.png'
 import Home from './Home/Home';
+import './Mobile.css'
 
 class Mobile extends React.Component {
 
@@ -63,7 +64,7 @@ class Mobile extends React.Component {
 
     render() {
         return (
-            <Container fluid>
+            <Container fluid className='mobile'>
                 <div id='topbar'>
                     <Row>
                         <Col xs={9} className='initials'>
