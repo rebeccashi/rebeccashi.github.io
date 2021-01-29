@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/rebeccashi.github.io/static/css/main.15682c2d.chunk.css",
-    "main.js": "/rebeccashi.github.io/static/js/main.d1fdc9ef.chunk.js",
-    "main.js.map": "/rebeccashi.github.io/static/js/main.d1fdc9ef.chunk.js.map",
+    "main.css": "/rebeccashi.github.io/static/css/main.53753d77.chunk.css",
+    "main.js": "/rebeccashi.github.io/static/js/main.cd89f493.chunk.js",
+    "main.js.map": "/rebeccashi.github.io/static/js/main.cd89f493.chunk.js.map",
     "runtime-main.js": "/rebeccashi.github.io/static/js/runtime-main.b6d03aa8.js",
     "runtime-main.js.map": "/rebeccashi.github.io/static/js/runtime-main.b6d03aa8.js.map",
-    "static/js/2.adfff537.chunk.js": "/rebeccashi.github.io/static/js/2.adfff537.chunk.js",
-    "static/js/2.adfff537.chunk.js.map": "/rebeccashi.github.io/static/js/2.adfff537.chunk.js.map",
+    "static/js/2.83c042cc.chunk.js": "/rebeccashi.github.io/static/js/2.83c042cc.chunk.js",
+    "static/js/2.83c042cc.chunk.js.map": "/rebeccashi.github.io/static/js/2.83c042cc.chunk.js.map",
     "index.html": "/rebeccashi.github.io/index.html",
-    "precache-manifest.edce0c3f69ad138507bec8d1df7bf868.js": "/rebeccashi.github.io/precache-manifest.edce0c3f69ad138507bec8d1df7bf868.js",
+    "precache-manifest.685c26832f4b0036fbe688f2b9e3bb25.js": "/rebeccashi.github.io/precache-manifest.685c26832f4b0036fbe688f2b9e3bb25.js",
     "service-worker.js": "/rebeccashi.github.io/service-worker.js",
-    "static/css/main.15682c2d.chunk.css.map": "/rebeccashi.github.io/static/css/main.15682c2d.chunk.css.map",
-    "static/js/2.adfff537.chunk.js.LICENSE.txt": "/rebeccashi.github.io/static/js/2.adfff537.chunk.js.LICENSE.txt",
+    "static/css/main.53753d77.chunk.css.map": "/rebeccashi.github.io/static/css/main.53753d77.chunk.css.map",
+    "static/js/2.83c042cc.chunk.js.LICENSE.txt": "/rebeccashi.github.io/static/js/2.83c042cc.chunk.js.LICENSE.txt",
     "static/media/calendar-snapshot.png": "/rebeccashi.github.io/static/media/calendar-snapshot.dcef4d94.png",
     "static/media/cssa.png": "/rebeccashi.github.io/static/media/cssa.f34e4080.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b6d03aa8.js",
-    "static/js/2.adfff537.chunk.js",
-    "static/css/main.15682c2d.chunk.css",
-    "static/js/main.d1fdc9ef.chunk.js"
+    "static/js/2.83c042cc.chunk.js",
+    "static/css/main.53753d77.chunk.css",
+    "static/js/main.cd89f493.chunk.js"
   ]
 }
