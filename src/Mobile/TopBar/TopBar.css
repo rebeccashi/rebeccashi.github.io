@@ -22,13 +22,15 @@
 .menuIcon {
     vertical-align: middle;
     text-align: left;
-    display:inline-block;
+    display: flex;
     padding-top: 5px;
+    justify-content: center;
 }
 
 .menuIcon img {
     text-align: center;
-    padding: 5px;
+    padding: 20px;
     margin-left: 0;
+    vertical-align: middle;
 }
 
