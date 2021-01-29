@@ -79,8 +79,8 @@ class Menu extends React.Component {
         //Make logos align in the center
         return (
             <div className='menu'>
-                <h1 id='initials'>RS</h1>
-                <Row className="logos">
+                <h1 id='mobile-initials'>RS</h1>
+                <Row className="mobile-logos">
                     <a href="https://github.com/rebeccashi" target="_blank" rel="noopener noreferrer">
                         <img src={GithubLogo} alt='Github'/>
                     </a>
@@ -92,11 +92,11 @@ class Menu extends React.Component {
                     </a> */}
                 </Row>
                 {/* <hr className='divider'/>    */}
-                <div className='links'>
-                    <Row><Link onClick={this.handleClick} onSetActive={this.handleActive} activeClass="active" to='home-mobile' className='link' spy={true} smooth={true} duration={500}><span className={this.state.link1}>Home</span></Link></Row>
-                    <Row><Link onClick={this.handleClick} onSetActive={this.handleActive} activeClass="active" to='experience-mobile' className='link' spy={true} smooth={true} duration={500}><span className={this.state.link2}>Experience</span></Link></Row>
-                    <Row><Link onClick={this.handleClick} onSetActive={this.handleActive} activeClass="active" to='skills-mobile' className="link" spy={true} smooth={true} duration={500}><span className={this.state.link3}>Skills</span></Link></Row>
-                    <Row><Link onClick={this.handleClick} onSetActive={this.handleActive} activeClass="active" to='academics-mobile' className="link" spy={true} smooth={true} duration={500}><span className={this.state.link4}>Academics</span></Link></Row>
+                <div className='mobile-links'>
+                    <Row><Link onClick={this.handleClick} onSetActive={this.handleActive} activeClass="active" to='home-mobile' className='link mobile-link' spy={true} smooth={true} duration={500}><span className={this.state.link1}>Home</span></Link></Row>
+                    <Row><Link onClick={this.handleClick} onSetActive={this.handleActive} activeClass="active" to='experience-mobile' className='link mobile-link' spy={true} smooth={true} duration={500}><span className={this.state.link2}>Experience</span></Link></Row>
+                    <Row><Link onClick={this.handleClick} onSetActive={this.handleActive} activeClass="active" to='skills-mobile' className="link mobile-link" spy={true} smooth={true} duration={500}><span className={this.state.link3}>Skills</span></Link></Row>
+                    <Row><Link onClick={this.handleClick} onSetActive={this.handleActive} activeClass="active" to='academics-mobile' className="link mobile-link" spy={true} smooth={true} duration={500}><span className={this.state.link4}>Academics</span></Link></Row>
                 </div>
             </div>
         );

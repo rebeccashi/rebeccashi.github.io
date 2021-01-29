@@ -10,7 +10,7 @@
     text-align: center;
 }
 
-#initials {
+#mobile-initials {
     font-family: 'Playfair Display', serif;
     font-size: 4rem !important;
     text-align: center;
@@ -31,19 +31,19 @@
     }
 } */
 
-.logos {
+.mobile-logos {
     top: 45%;
     /* position: absolute; */
     text-align: center;
 }
 
-img {
+.mobile-logos img {
     width: 40px;
     margin: 15px;
     text-align: center;
 }
 
-.divider {
+.mobile-divider {
     width: 80%;
     margin-top: 40px;
     position: absolute;
@@ -52,7 +52,7 @@ img {
     margin-right: 10%;
 }
 
-.links {
+.mobile-links {
     text-align: center;
     position: absolute;
     margin: auto;
@@ -60,7 +60,7 @@ img {
     top: 48%;
 }
 
-.link {
+.mobile-link {
     text-transform: uppercase;
     color: black;
     font-size: 1.5rem;
