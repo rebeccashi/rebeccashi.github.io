@@ -27,13 +27,11 @@ class HomeWrapper extends React.Component {
                     <Col md={10} className='desktop-bio'>
                         <h2>Hi there!</h2>
                         <p>
-                            I am Xiaoyi Shi and I go by Rebecca. 
-                            I am a rising junior at <span id='nyu'>New York University</span> studying <span id='cs'>Computer Science</span>. 
-                            So far, I have worked as a front-end developer
-                            using <span id='skills'>React.js, Typescript, and Node.js.</span>
-                            &nbsp;My goal is to become a full stack software engineer. 
-                            In addition to computer science, 
-                            I am also interested in <span id='art'>art and design,</span> including UI/UX.
+                            I am Rebecca Shi. 
+                            I am a junior at <span id='nyu'>New York University</span> studying <span id='cs'>Computer Science</span>. 
+                            I am a grader for a CS course and an incoming Software Engineer intern at OSIsoft. <br/>
+                            In my free time, I like to work on <span className='purple'>full-stack web development</span> projects. 
+                            I am also interested in art and design, including UI/UX.
                         </p>
                     </Col>
                     <Col md={1}></Col>
