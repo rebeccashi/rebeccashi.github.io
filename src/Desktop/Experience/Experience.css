@@ -4,3 +4,7 @@
     background-color:#d3edff;
     background-image: linear-gradient(white 0%, #d3edff 5%, white 97%);
 }
+
+.exp::-webkit-scrollbar {
+    display: none;
+}
