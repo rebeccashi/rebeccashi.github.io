@@ -3,8 +3,10 @@
     overflow: scroll;
     background-color:#d3edff;
     background-image: linear-gradient(white 0%, #d3edff 5%, white 97%);
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 .exp::-webkit-scrollbar {
-    display: none;
+    display: none;  /* Chrome */
 }
