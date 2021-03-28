@@ -32,10 +32,9 @@ class BoxWrapper extends React.Component {
                 <div id='type'>{type}</div>
                 <h3 className='summary'>
                     <span id="name">{summary.name}</span>
-                    { summary.company && <span id="company">, {summary.company}, </span>}
+                    { summary.company && <React.Fragment><br/><span id="company"> {summary.company}, </span></React.Fragment>}
                     { summary.location && <span>{summary.location}</span>}
-                    <span>     {date}</span>
-                    {/* TO DO: insert more spaces*/}
+                    <span className="tab"></span><span id="date">{date}</span>
                 </h3>
                 <ul>
                     {details.map(detail => <li>{detail}</li>)}

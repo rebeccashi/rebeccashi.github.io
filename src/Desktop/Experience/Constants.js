@@ -15,7 +15,7 @@ const nyuIT = {
     details: [
         'Developed an internal NYU website providing services to all NYU students and staff members, powered by React, Javascript and Typescript.',
         'Collaborated with other developers, software architects, and designers to discuss design and implementation solutions and adapted UI designs to programming needs when necessary.',
-        'Implemented API calls to mock API’s and designed data storage for the application',
+        'Implemented API calls to mock API’s and designed frontend data storage for the application',
     ],
 };
 
@@ -79,7 +79,7 @@ const cumulus = {
     details: [
        "A website that gathers and displays data about jobs to help job seekers understand the most in-demand skills for their desired jobs.",
         "The website scrapes data from job sites with Node.js and utilizes Express.js for client-server communication.",
-        "I worked with another student to create this project, which won The Most Novel Hack Award at Hack the Northeast and $10K in prize money and credits."
+        `I worked with another student to create this project, which won The Most Novel Hack Award at Hack the Northeast and $10K in prize money and credits.`
     ],
     img: {
         alt: "cumulus snapshot",

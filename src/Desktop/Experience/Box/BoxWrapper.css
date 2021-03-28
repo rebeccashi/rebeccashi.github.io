@@ -14,17 +14,28 @@
     font-size: 16px;
     padding-top: 8px;
     padding-bottom: 4px;
+    line-height: 28px;
 }
 
 #type {
     font-family: 'Roboto Mono', monospace;
     border: 1px solid black;
     padding: 3px;
-    width: 10em;
     margin-bottom: 5px;
+    width: 10em;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.tab {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+#name {
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 16px;
 }
 
 li {
