@@ -62,7 +62,7 @@ class Navbar extends React.Component {
                     <a href="https://github.com/rebeccashi" target="_blank" rel="noopener noreferrer">
                         <img src={GithubLogo} alt='Github'/>
                     </a>
-                    <a href="https://www.linkedin.com/in/xiaoyi-s-b312a3106/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/rebeccaxshi/" target="_blank" rel="noopener noreferrer">
                         <img src={LinkedinLogo} alt='Linkedin' id='linkedin'/>
                     </a>
                     {/* <a href="mailto:xs938@nyu.edu?subject=hello" target="_blank" rel="noopener noreferrer">
