@@ -4,6 +4,7 @@ import p5 from 'p5';
 import Box from './Box';
 import calendar from '../../../images/calendar-snapshot.png';
 import cssa from '../../../images/cssa.png'
+import cumulus from '../../../images/cumulus.png'
 
 class BoxWrapper extends React.Component {
 
@@ -47,6 +48,11 @@ class BoxWrapper extends React.Component {
                    || (img.alt === 'cssa snapshot' && 
                     <a href={img.link} target="_blank" rel="noopener noreferrer">
                                 <img src={cssa} className="snapshot" alt={img.alt} />
+                            </a>
+                        )
+                     || (img.alt === 'cumulus snapshot' && 
+                    <a href={img.link} target="_blank" rel="noopener noreferrer">
+                                <img src={cumulus} className="snapshot" alt={img.alt} />
                             </a>
                         )
                     )

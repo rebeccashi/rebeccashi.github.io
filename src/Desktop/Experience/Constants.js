@@ -69,4 +69,22 @@ const nyuGrader = {
     ],
 }
 
-export { jobTypes, nyuIT, nyuGrader, calendar, cssa };
+const cumulus = {
+    index: 5,
+    type: jobTypes.Project,
+    date: 'Jan 2021. - Present',
+    summary: {
+        name: 'Cumulus'
+    },
+    details: [
+       "A website that gathers and displays data about jobs to help job seekers understand the most in-demand skills for their desired jobs.",
+        "The website scrapes data from job sites with Node.js and utilizes Express.js for client-server communication.",
+        "I worked with another student to create this project, which won The Most Novel Hack Award at Hack the Northeast and $10K in prize money and credits."
+    ],
+    img: {
+        alt: "cumulus snapshot",
+        link: 'https://cumulus-data.herokuapp.com',
+    }
+}
+
+export { jobTypes, nyuIT, nyuGrader, calendar, cssa, cumulus };
