@@ -19,7 +19,7 @@ const Card = (props) => {
                             <span id='date'>{club.date}</span>
                         </Row>
                         <ul>
-                            {club.details.map(detail => <li>{detail}</li>)}
+                            {club.details.map((detail, index) => <li key={index}>{detail}</li>)}
                         </ul>
                     </div>
                 </Col>

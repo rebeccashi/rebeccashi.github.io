@@ -37,7 +37,7 @@ class BoxWrapper extends React.Component {
                     <span className="tab"></span><span id="date">{date}</span>
                 </h3>
                 <ul>
-                    {details.map(detail => <li>{detail}</li>)}
+                    {details.map((detail, index) => <li key={index}>{detail}</li>)}
                 </ul>
                 {img && 
                     ( (img.alt==='calendar snapshot' &&

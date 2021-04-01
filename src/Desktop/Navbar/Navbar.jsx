@@ -21,7 +21,7 @@ class Navbar extends React.Component {
 
     //IMPROVE: simplify the code
     handleActive(to) {
-        console.log(`to ${to}`);
+        // console.log(`to ${to}`);
         if (to === 'home') {
             this.setState({
                 link1: `animation ${to}`,
