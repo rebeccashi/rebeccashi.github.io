@@ -3,7 +3,8 @@
   "homepage": "rebeccashi.github.io",
   "version": "0.1.0",
   "engines": {
-    "node": "14.15.0"
+    "node": "14.15.0",
+    "npm": "7.8.0"
   },
   "private": true,
   "dependencies": {
