@@ -27,9 +27,9 @@ class HomeWrapper extends React.Component {
                     <Col md={10} className='desktop-bio'>
                         <h2>Hi there!</h2>
                         <p>
-                            I am Rebecca Shi. 
-                            I am a junior at <span id='nyu'>New York University</span> studying <span id='cs'>Computer Science</span>. 
-                            I am a grader for a CS course and an incoming Software Engineer intern at OSIsoft. <br/>
+                            My name is Xiaoyi Shi and I go by <span className='purple'>Rebecca</span>. 
+                            I am a senior at <span id='nyu'>New York University</span> studying <span id='cs'>Computer Science</span>.
+                            I have experience working as a backend Software Developer Intern at AVEVA and a front end Software Developer for NYU IT.<br/>
                             In my free time, I like to work on <span className='purple'>full-stack web development</span> projects. 
                             I am also interested in art and design, including UI/UX.
                         </p>
