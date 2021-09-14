@@ -57,7 +57,7 @@ const cssa = {
 const nyuGrader = {
     index: 4,
     type: jobTypes.Work,
-    date: 'Sept 2020 - Present',
+    date: 'Sept. 2020 - May 2021',
     summary: {
         name: 'Computer Science Grader',
         company: 'New York University',
@@ -87,4 +87,20 @@ const cumulus = {
     }
 }
 
-export { jobTypes, nyuIT, nyuGrader, calendar, cssa, cumulus };
+const aveva = {
+    index: 6,
+    type: jobTypes.Work,
+    date: 'May 2021 - Aug. 2021',
+    summary: {
+        name: 'Software Developer',
+        company: 'AVEVA (Formerly OSIsoft)',
+        location: 'Remote',
+    },
+    details: [
+        'Designed and implemented a multithreading host discovery feature that enabled users to test the health of a network with low latency.',
+        'Created unit tests and functional tests with xUnit and Moq.',
+        'Created YAML based CI/CD pipelines for automating the testing and release process in Azure DevOps.'
+    ],
+}
+
+export { jobTypes, nyuIT, nyuGrader, calendar, cssa, cumulus, aveva };
